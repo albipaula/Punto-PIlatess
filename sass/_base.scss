@@ -1,0 +1,65 @@
+/* css general */
+*{
+    margin: 0;
+    padding: 0; 
+    list-style: none; 
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+body { 
+
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    font-weight:bolder;
+
+}
+
+.gridContainer { 
+
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(7,auto);
+grid-template-areas: "header"
+                     "sectionInstalaciones"
+                     "sectionHorarios"
+                     "sectionInstructores"
+                     "sectionContacto"
+                     "footer"   ;
+
+overflow-x:  hidden;
+
+}
+
+
+a:link {
+
+    color: rgb(15, 15, 15);
+    font-size: larger;
+    }
+
+a:visited{
+
+    color: rgb(28, 98, 27);
+  
+}
+
+a:hover{
+    background-color: rgb(86, 207, 140);
+    padding: 20px;
+    border-radius: 10px;
+    width:min-content;
+    transition: 0.8ms;
+}
+
+
+
+input, textarea{
+    margin: 0 auto; /* Centramos el formulario */
+    width: 300px;   /* Sin ancho no podemos centrar el formulario */
+    background-color: white; /* Color blanco para el formulario */
+    padding: 10px; /* separamos los bordes del form del resto de elementos */
+    border-radius: 10px; /* Redondeamos los bordes del form */
+    margin-top: 10px;
+ }

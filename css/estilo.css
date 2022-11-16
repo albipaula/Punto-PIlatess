@@ -1,0 +1,517 @@
+@charset "UTF-8";
+/* css general */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header" "sectionInstalaciones" "sectionHorarios" "sectionInstructores" "sectionContacto" "footer";
+  overflow-x: hidden;
+}
+
+a:link {
+  color: rgb(15, 15, 15);
+  font-size: larger;
+}
+
+a:visited {
+  color: rgb(28, 98, 27);
+}
+
+a:hover {
+  background-color: rgb(86, 207, 140);
+  padding: 20px;
+  border-radius: 10px;
+  width: min-content;
+  transition: 0.8ms;
+}
+
+input, textarea {
+  margin: 0 auto; /* Centramos el formulario */
+  width: 300px; /* Sin ancho no podemos centrar el formulario */
+  background-color: white; /* Color blanco para el formulario */
+  padding: 10px; /* separamos los bordes del form del resto de elementos */
+  border-radius: 10px; /* Redondeamos los bordes del form */
+  margin-top: 10px;
+}
+
+.navbar {
+  background-color: rgba(178, 221, 216, 0.5960784314);
+}
+
+.header__logo {
+  max-width: 30vh;
+}
+
+.fucsia {
+  background-color: #FF99C8;
+  width: 100%;
+  height: 20px;
+  z-index: 50;
+  position: fixed;
+}
+
+.amarillo {
+  background-color: #FCF6BD;
+}
+
+/* vista mobile  */
+@media (max-width: 767px) {
+  .institucional {
+    display: none;
+  }
+}
+/* vista desktop */
+@media (min-width: 768px) {
+  .institucional {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: auto;
+  }
+  .institucional__mision, .institucional__vision {
+    padding: 50px;
+    line-height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .institucional__mision div, .institucional__vision div {
+    display: flex;
+  }
+  .institucional__mision p, .institucional__vision p {
+    align-self: center;
+  }
+}
+/* vista mobile  */
+@media (max-width: 767px) {
+  .articleInstalaciones__img--disable {
+    display: none;
+  }
+  .articleInstalaciones__div--disable, .sectionInstalaciones__h2 {
+    display: none;
+  }
+  .articleInstalaciones__div--flex {
+    text-align: center;
+  }
+  .articleInstalaciones__img {
+    width: 80%;
+  }
+  .sectionInstalaciones {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* vista desktop */
+@media (min-width: 768px) {
+  .sectionInstalaciones {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 300px;
+  }
+  .articleInstalaciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(202, 220, 218, 0.5058823529);
+    padding: 30px;
+  }
+  .articleInsatalaciones__div--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .articleInstalaciones__img, .articleInstalaciones__img--disable {
+    border-radius: 20px;
+    padding-top: 20px;
+  }
+}
+/* vista mobile  */
+@media (max-width: 767px) {
+  .articleInstructores__img--disable, .col__Instructor {
+    display: none;
+  }
+  .articleInstructores__img {
+    width: 80%;
+  }
+  .sectionInstructores, .articleInstructores__a {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionInstructores {
+    padding-top: 200px;
+  }
+}
+/* vista desktop */
+@media (min-width: 768px) {
+  .sectionInstructores {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .sectionInstructores {
+    padding-top: 300px;
+  }
+  .articleInstructores__a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(202, 220, 218, 0.5058823529);
+    padding: 30px;
+  }
+  .articleInstructores__a p {
+    text-align: center;
+  }
+}
+/* vista mobile  */
+@media (max-width: 767px) {
+  .sectionHorarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(178, 221, 216, 0.5960784314);
+    padding: 10px;
+    padding-top: 200px;
+  }
+  .articleInstalaciones__img--disable {
+    display: none;
+  }
+  .planes__h2 {
+    padding-top: 160px;
+    text-align: center;
+  }
+  .plan {
+    width: auto;
+    text-align: center;
+    background: rgba(178, 221, 216, 0.5960784314);
+    box-shadow: 0px 0px 20px #FCF6BD;
+    transition-duration: 0.5s;
+    margin: 20px;
+    padding-bottom: 20px;
+  }
+  .title {
+    text-align: center;
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  .pricecontainer {
+    width: 100%;
+    margin-top: 0.7em;
+    background-color: #FCF6BD;
+    box-shadow: inset 0px 0px 2em #FCF6BD;
+  }
+  .price {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 0.75em 0 0 0;
+  }
+  .pricedescriptor {
+    text-align: center;
+    color: rgb(118, 118, 118);
+    font-size: medium;
+    padding: 0 0 1em 0;
+  }
+  .includes {
+    text-align: center;
+    height: auto;
+    color: rgb(110, 110, 110);
+    margin-top: 0.6em;
+    font-size: small;
+    font-weight: bold;
+  }
+  .benefitlist li {
+    font-size: large;
+    text-align: center;
+  }
+  .benefitlist li:nth-child(1) {
+    margin-top: 0.4em;
+  }
+  ol,
+  ul {
+    padding: 2rem;
+  }
+  .btncontainer {
+    text-align: center;
+  }
+  .btncontainer button {
+    --color: #FCF6BD;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+  }
+}
+/* vista desktop */
+@media (min-width: 768px) {
+  .sectionHorarios {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 300px;
+  }
+  .planes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .planes__h2 {
+    padding-top: 150px;
+  }
+  .plan {
+    width: auto;
+    text-align: center;
+    background: rgba(178, 221, 216, 0.5960784314);
+    box-shadow: 0px 0px 20px #FCF6BD;
+    transition-duration: 0.5s;
+    margin: 20px;
+    padding-bottom: 20px;
+  }
+  .title {
+    text-align: center;
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  .pricecontainer {
+    width: 100%;
+    margin-top: 0.7em;
+    background-color: #FCF6BD;
+    box-shadow: inset 0px 0px 2em #FCF6BD;
+  }
+  .price {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 0.75em 0 0 0;
+  }
+  .pricedescriptor {
+    text-align: center;
+    color: rgb(118, 118, 118);
+    font-size: medium;
+    padding: 0 0 1em 0;
+  }
+  .includes {
+    text-align: center;
+    height: auto;
+    color: rgb(110, 110, 110);
+    margin-top: 0.6em;
+    font-size: small;
+    font-weight: bold;
+  }
+  .benefitlist li {
+    font-size: large;
+    text-align: center;
+  }
+  .benefitlist li:nth-child(1) {
+    margin-top: 0.4em;
+  }
+  ol,
+  ul {
+    padding: 2rem;
+  }
+  .btncontainer {
+    text-align: center;
+  }
+  .btncontainer button {
+    --color: #FCF6BD;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+  }
+}
+/* vista mobile  */
+@media (max-width: 767px) {
+  .sectionContacto__iframe--disable, .sectionContacto__form--disable {
+    display: none;
+  }
+  .sectionContacto__h2 {
+    display: none;
+  }
+  .sectionContacto, .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portada {
+    padding-top: 180px;
+  }
+  .sectionContacto__form, .sectionContacto__container1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+  .sectionContacto__container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 50px;
+    background-color: rgba(202, 220, 218, 0.5058823529);
+  }
+  .sectionContacto {
+    background-color: rgba(178, 221, 216, 0.5960784314);
+  }
+  .sectionContacto {
+    padding-top: 300px;
+  }
+}
+/* vista desktop */
+@media (min-width: 768px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .portada__img {
+    opacity: 0.8;
+  }
+  .sectionContacto, h2 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .sectionContacto {
+    padding-top: 300px;
+  }
+  .sectionContacto--desktop, .sectionContacto__container3--desktop {
+    background-color: rgba(178, 221, 216, 0.5960784314);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .sectionContacto__container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    padding: 30px;
+  }
+  .sectionContacto__container1, .sectionContacto__container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    font-size: 50px;
+  }
+  .sectionContacto__container3--desktop {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 50px;
+  }
+  .sectionContacto {
+    background-color: rgba(202, 220, 218, 0.5058823529);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .footer {
+    text-align: center;
+  }
+  .formContacto {
+    margin: 0 auto; /* Centramos el formulario */
+    width: 300px; /* Sin ancho no podemos centrar el formulario */
+    /* separamos los bordes del form del resto de elementos */
+    border-radius: 10px; /* Redondeamos los bordes del form */
+  }
+  .formContacto__button {
+    margin-top: 10px; /* Damos un margen individual para el contenedor del botón */
+    width: 60%;
+    margin-left: 15%;
+    border-radius: 10px;
+  }
+  .formContact__input {
+    padding-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

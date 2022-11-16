@@ -1,0 +1,140 @@
+$principalColor:  #b2ddd898;
+$thirdColor:#FCF6BD;
+$secondColor:#FF99C8;
+ 
+ /* vista mobile  */
+@media  (max-width: 767px){
+
+ .sectionContacto__iframe--disable, .sectionContacto__form--disable{ 
+    display: none;
+}
+
+.sectionContacto__h2{ display: none;}
+
+
+
+ .sectionContacto, .footer  {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+.portada  { padding-top: 180px; }
+
+
+
+.sectionContacto__form , .sectionContacto__container1 { 
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+.sectionContacto__container3  { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 50px;
+    background-color: #cadcda81;
+}
+.sectionContacto { background-color: $principalColor;}
+
+
+ .sectionContacto{ padding-top: 300px; }
+}
+
+  /* vista desktop */
+@media (min-width: 768px){
+
+
+.navbar-expand-lg .navbar-collapse { justify-content: flex-end; }   
+    
+.portada__img { opacity: 0.8; }
+    
+    
+.sectionContacto, h2 { 
+        text-align: center; padding-bottom: 50px;
+    }
+.sectionContacto{ padding-top: 300px; }
+        
+    .sectionContacto--desktop, .sectionContacto__container3--desktop { 
+        background-color: $principalColor;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    
+    .sectionContacto__container2 {  
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 20%;
+        padding: 30px;
+    }
+    
+    .sectionContacto__container1, .sectionContacto__container3  { 
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 30px;
+        font-size: 50px;
+    }
+    
+    .sectionContacto__container3--desktop  { 
+    
+        display: flex;
+        flex-direction: row;
+        height: auto    ;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 50px;
+       
+    }
+    
+     .sectionContacto  { 
+        background-color: #cadcda81;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+    } 
+    
+    .footer { 
+        text-align: center;
+    }    
+    
+    .formContacto 
+     
+    {
+        margin: 0 auto; /* Centramos el formulario */
+        width: 300px;   /* Sin ancho no podemos centrar el formulario */
+         /* separamos los bordes del form del resto de elementos */
+        border-radius: 10px; /* Redondeamos los bordes del form */
+     }
+    
+    
+    
+     .formContacto__button{
+        margin-top: 10px; /* Damos un margen individual para el contenedor del botón */
+        width: 60%;
+        margin-left: 15%;
+        border-radius: 10px;
+    }
+    
+    .formContact__input { 
+    
+        padding-bottom: 30px;
+    }
+    
+    
+    }
+    
+    

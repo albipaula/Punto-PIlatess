@@ -1,0 +1,296 @@
+$principalColor:  #b2ddd898;
+$thirdColor:#FCF6BD;
+$secondColor:#FF99C8;
+ /* vista mobile  */
+ @media  (max-width: 767px){
+
+
+.sectionHorarios {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color:$principalColor;
+    padding: 10px;
+    padding-top: 200px;
+
+}
+
+  .articleInstalaciones__img--disable{
+    display: none;
+
+}
+
+
+.planes__h2 { padding-top: 160px; text-align: center;}
+
+.plan {
+   width: auto;
+   text-align: center;
+   background: $principalColor;
+   box-shadow: 0px 0px 20px $thirdColor;
+   transition-duration: 0.5s;
+   margin: 20px;
+   padding-bottom: 20px; 
+}
+  
+  .title {
+   text-align: center;
+   margin-top: 0.5em;
+   font-weight: bold;
+   font-size: x-large;
+   
+  }
+  
+  .pricecontainer {
+   width: 100%;
+   margin-top: 0.7em;
+   background-color: $thirdColor;
+   box-shadow: inset 0px 0px 2em $thirdColor;
+  }
+  
+  .price {
+   text-align: center;
+   font-size: x-large;
+   font-weight: bold;
+   padding: 0.75em 0 0 0;
+  }
+  
+  .pricedescriptor {
+   text-align: center;
+   color: rgb(118, 118, 118);
+   font-size: medium;
+   padding: 0 0 1em 0;
+  }
+  
+  .includes {
+   text-align: center;
+   height: auto;
+   color: rgb(110, 110, 110);
+   margin-top: 0.6em;
+   font-size: small;
+   font-weight: bold;
+  }
+  
+  .benefitlist
+   li {
+   font-size: large;
+   text-align: center;
+   
+  }
+  
+  .benefitlist li:nth-child(1) {
+   margin-top: 0.4em;
+
+   
+
+  }
+  
+ol,
+ul {
+  padding: 2rem;
+}
+  .btncontainer {
+   text-align: center;
+  }
+  
+
+  
+
+
+.btncontainer button {
+ --color: #FCF6BD;
+
+ display: inline-block;
+ width: 8em;
+ height: 2.6em;
+ line-height: 2.5em;
+ margin: 20px;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 500;
+
+}
+
+button:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+
+button:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+button:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+button:active:before {
+ background: #3a0ca3;
+ transition: background 0s;
+}
+
+ }
+
+
+ /* vista desktop */
+@media (min-width: 768px){
+
+.sectionHorarios  {
+    text-align: center; 
+    padding-bottom: 50px;
+    padding-top: 300px; 
+}
+
+
+.planes{ 
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+align-content: center;
+width: 100%;
+height: auto;
+
+
+}
+
+.planes__h2 { padding-top: 150px;}
+
+.plan {
+   width: auto;
+   text-align: center;
+   background: $principalColor;
+   box-shadow: 0px 0px 20px $thirdColor;
+   transition-duration: 0.5s;
+   margin: 20px;
+   padding-bottom: 20px; 
+}
+  
+  .title {
+   text-align: center;
+   margin-top: 0.5em;
+   font-weight: bold;
+   font-size: x-large;
+   
+  }
+  
+  .pricecontainer {
+   width: 100%;
+   margin-top: 0.7em;
+   background-color: $thirdColor;
+   box-shadow: inset 0px 0px 2em $thirdColor;
+  }
+  
+  .price {
+   text-align: center;
+   font-size: x-large;
+   font-weight: bold;
+   padding: 0.75em 0 0 0;
+  }
+  
+  .pricedescriptor {
+   text-align: center;
+   color: rgb(118, 118, 118);
+   font-size: medium;
+   padding: 0 0 1em 0;
+  }
+  
+  .includes {
+   text-align: center;
+   height: auto;
+   color: rgb(110, 110, 110);
+   margin-top: 0.6em;
+   font-size: small;
+   font-weight: bold;
+  }
+  
+  .benefitlist
+   li {
+   font-size: large;
+   text-align: center;
+   
+  }
+  
+  .benefitlist li:nth-child(1) {
+   margin-top: 0.4em;
+
+   
+
+  }
+  
+ol,
+ul {
+  padding: 2rem;
+}
+  .btncontainer {
+   text-align: center;
+  }
+  
+
+  
+
+
+.btncontainer button {
+ --color: #FCF6BD;
+
+ display: inline-block;
+ width: 8em;
+ height: 2.6em;
+ line-height: 2.5em;
+ margin: 20px;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 500;
+
+}
+
+button:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+
+button:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+button:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+button:active:before {
+ background: #3a0ca3;
+ transition: background 0s;
+}
+
+
+} 
+

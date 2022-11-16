@@ -1,0 +1,14 @@
+$principalColor:  #b2ddd898;
+$thirdColor:#FCF6BD;
+$secondColor:#FF99C8;
+
+.navbar { 
+    background-color: $principalColor ;
+        }
+
+.header__logo { 
+        
+            max-width: 30vh;
+        }
+     .fucsia { background-color:  $secondColor; width: 100%; height: 20px; z-index: 50; position: fixed;}
+     .amarillo{ background-color: $thirdColor;  }           

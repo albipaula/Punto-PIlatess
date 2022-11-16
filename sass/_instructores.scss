@@ -1,0 +1,52 @@
+ /* vista mobile  */
+ @media  (max-width: 767px){
+
+    .articleInstructores__img--disable, .col__Instructor { 
+        display: none;
+    }
+
+    .articleInstructores__img { width: 80%;}
+    
+   .sectionInstructores, .articleInstructores__a {
+    
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: center; 
+        
+    }
+    
+     .sectionInstructores{ padding-top: 200px; }
+    }
+    
+      /* vista desktop */
+      @media (min-width: 768px){
+    
+    
+      .sectionInstructores { 
+            text-align: center; padding-bottom: 50px;
+        }
+      .sectionInstructores { padding-top: 300px; }
+        
+            
+       .articleInstructores__a  {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: space-around;
+            background-color:#cadcda81;
+            padding: 30px;
+            
+
+           p { text-align: center;
+         } 
+            
+       }
+        
+       
+        
+        
+        }
+        
+        
