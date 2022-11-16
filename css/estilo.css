@@ -192,8 +192,10 @@ input, textarea {
   .articleInstalaciones__img--disable {
     display: none;
   }
+  .planes__mobile {
+    padding-top: 200px;
+  }
   .planes__h2 {
-    padding-top: 160px;
     text-align: center;
   }
   .plan {
