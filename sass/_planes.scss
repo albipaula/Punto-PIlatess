@@ -13,6 +13,7 @@ $secondColor:#FF99C8;
     background-color:$principalColor;
     padding: 10px;
     padding-top: 200px;
+    padding-bottom: 200px;
 
 }
 
@@ -22,7 +23,7 @@ $secondColor:#FF99C8;
 }
 
 .planes__mobile { padding-top: 200px;}
-.planes__h2 {  text-align: center;}
+.planes__h2 {  text-align: center;margin: 20px;}
 
 .plan {
    width: auto;
@@ -143,6 +144,11 @@ button:active:before {
  transition: background 0s;
 }
 
+.footer { 
+
+  padding: 20px;
+}
+
  }
 
 
@@ -151,7 +157,7 @@ button:active:before {
 
 .sectionHorarios  {
     text-align: center; 
-    padding-bottom: 50px;
+    padding-bottom: 300px;
     padding-top: 300px; 
 }
 
@@ -170,7 +176,7 @@ height: auto;
 
 }
 
-.planes__h2 { padding-top: 150px;}
+.planes__h2 { padding-top: 200px;}
 
 .plan {
    width: auto;
@@ -291,6 +297,10 @@ button:active:before {
  transition: background 0s;
 }
 
+.footer { 
+
+  padding: 20px;
+}
 
 } 
 

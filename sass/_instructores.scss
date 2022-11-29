@@ -1,13 +1,13 @@
  /* vista mobile  */
  @media  (max-width: 767px){
 
-    .articleInstructores__img--disable, .col__Instructor { 
+.articleInstructores__img--disable, .col__Instructor { 
         display: none;
     }
 
-    .articleInstructores__img { width: 80%;}
+.articleInstructores__img { width: 80%;}
     
-   .sectionInstructores, .articleInstructores__a {
+.sectionInstructores, .articleInstructores__a {
     
         display: flex;
         width: auto;
@@ -16,20 +16,21 @@
         
     }
     
-     .sectionInstructores{ padding-top: 200px; }
+.sectionInstructores{ padding-top: 200px; }
     }
     
-      /* vista desktop */
-      @media (min-width: 768px){
-    
-    
-      .sectionInstructores { 
-            text-align: center; padding-bottom: 50px;
+  /* vista desktop */
+  @media (min-width: 768px){
+
+
+.sectionInstructores { 
+        text-align: center; 
+        padding-bottom: 50px;
         }
-      .sectionInstructores { padding-top: 300px; }
+.sectionInstructores { padding-top: 300px; }
         
             
-       .articleInstructores__a  {
+.articleInstructores__a  {
             
             display: flex;
             flex-direction: column;
@@ -39,14 +40,12 @@
             padding: 30px;
             
 
-           p { text-align: center;
-         } 
+            p { 
+                text-align: center;
+              } 
             
-       }
-        
-       
-        
-        
-        }
+}   
+                
+}
         
         

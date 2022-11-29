@@ -188,6 +188,7 @@ input, textarea {
     background-color: rgba(178, 221, 216, 0.5960784314);
     padding: 10px;
     padding-top: 200px;
+    padding-bottom: 200px;
   }
   .articleInstalaciones__img--disable {
     display: none;
@@ -197,6 +198,7 @@ input, textarea {
   }
   .planes__h2 {
     text-align: center;
+    margin: 20px;
   }
   .plan {
     width: auto;
@@ -291,12 +293,15 @@ input, textarea {
     background: #3a0ca3;
     transition: background 0s;
   }
+  .footer {
+    padding: 20px;
+  }
 }
 /* vista desktop */
 @media (min-width: 768px) {
   .sectionHorarios {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 300px;
     padding-top: 300px;
   }
   .planes {
@@ -310,7 +315,7 @@ input, textarea {
     height: auto;
   }
   .planes__h2 {
-    padding-top: 150px;
+    padding-top: 200px;
   }
   .plan {
     width: auto;
@@ -404,6 +409,9 @@ input, textarea {
   button:active:before {
     background: #3a0ca3;
     transition: background 0s;
+  }
+  .footer {
+    padding: 20px;
   }
 }
 /* vista mobile  */
@@ -498,6 +506,7 @@ input, textarea {
   }
   .footer {
     text-align: center;
+    padding: 20px;
   }
   .formContacto {
     margin: 0 auto; /* Centramos el formulario */
