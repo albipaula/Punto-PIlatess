@@ -28,7 +28,7 @@
       <header class="header" >
         <nav class="navbar navbar-expand-lg  fixed-top ">
           <div class="container-fluid">
-            <a href="./index.html">  <img class=" navbar-brand header__logo   animate__animated animate__bounce " src="Images/Logo/logo remeras2.png" alt="logo" width="150vw" > </a>
+            <a href="./index.html">  <img class=" navbar-brand header__logo   animate__animated animate__bounce " src="Images/Logo/logo remeras2.png" alt="logo"  > </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,16 +38,17 @@
                   <a class="nav-link active" aria-current="page"  href="Index.html"> Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href= "./pages/instructores.html"> Instructores</a>
+                  <a class="nav-link" href= "#instructores"> Instructores</a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link" href= "./pages/planes.html">Planes</a>
+                  <a class="nav-link" href= "#planes">Planes</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link " href= "#nosotros">Equipo</a> 
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href= "./pages/instalaciones.html" >Instalaciones</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href= "./pages/contactanos.html">Contactanos</a> 
+                  <a class="nav-link " href= "#contactanos">Contactanos</a> 
                 </li>
               </ul>
             </div>
@@ -57,32 +58,36 @@
 
       <!-- PORTADA IMAGEN -->      
       <div class="portada" >
-        <img class="portada__img container-fluid " src="../Images/portada.jpeg" alt="imagenPortada" >
+        <img class="portada__img container-fluid " src="./Images/portada.jpeg" alt="imagenPortada" >
         </div>    
       <!-- SECTION PLANES -->  
-        <h2 class="planes__h2 container" >PLANES MENSULAES PILATES REFORMER EN CAMILLA</h2>
-      <section class="planes">
-        <!-- PLAN BASICO -->
-        <div class="plan"> 
-          <p class="title">Basico</p>
+      <section class="planes" id="planes" >
+        <h2 class="planes__h2 container" >PLANES MENSULAES PILATES REFORMER EN CAMILLA <br> (*Turnos fijos o paquete libre de creditos)</h2> 
+      
+   
+  
+        <!-- PLAN 1 -->
+        <div class="plan "> 
+          <p class="title">PLAN 1</p>
           <div class="pricecontainer">
-            <p class="price">$3.000</p>
+            <p class="price">$2.700</p>
             <p class="pricedescriptor">/mes</p>
           </div>
           <p class="includes">Este Plan Incluye:</p>
           <ul class="benefitlist">
             <li>1 CLASE POR SEMANA</li>
-            <li> BICICLETA FIJA LIBRE</li>
+            <br>
           </ul>
-          <div class="btncontainer">
+
+        <!--   <div class="btncontainer">
             <button>Seleccionar</button>
-          </div>
+          </div> -->
         </div>  
-        <!-- PLAN BASICO PLUS -->
+        <!-- PLAN 2 -->
         <div class="plan">
-          <p class="title">Basico Plus</p>
+          <p class="title">PLAN 2</p>
           <div class="pricecontainer">
-            <p class="price">$3.200</p>
+            <p class="price">$3.000</p>
             <p class="pricedescriptor">/mes</p>
           </div>
           <p class="includes">Este Plan Incluye:</p>
@@ -90,13 +95,13 @@
             <li> 2 CLASES POR SEMANA</li>
             <li> BICICLETA FIJA LIBRE</li>
           </ul>
-          <div class="btncontainer">
+          <!-- <div class="btncontainer">
             <button>Seleccionar</button>
-          </div>
+          </div> -->
         </div>  
-        <!-- PLAN INTERMEDIO -->
+        <!-- PLAN 3-->
         <div class="plan">
-          <p class="title">Intermedio</p>
+          <p class="title">PLAN 3</p>
           <div class="pricecontainer">
             <p class="price">$3.600</p>
             <p class="pricedescriptor">/mes</p>
@@ -106,13 +111,13 @@
             <li>3 CLASES POR SEMANA</li>
             <li> BICICLETA FIJA LIBRE</li>
           </ul>
-          <div class="btncontainer">
+        <!--  <div class="btncontainer">
             <button>Seleccionar</button>
-          </div>
+          </div> -->
         </div>  
-        <!-- PLAN INTERMEDIO PLUS -->
+        <!-- PLAN 4 -->
         <div class="plan">
-          <p class="title">Intermedio Plus</p>
+          <p class="title">PLAN 4</p>
           <div class="pricecontainer">
             <p class="price">$4.200</p>
             <p class="pricedescriptor">/mes</p>
@@ -122,13 +127,13 @@
               <li>4 CLASES POR SEMANA</li>
               <li> BICICLETA FIJA LIBRE</li>
             </ul>
-          <div class="btncontainer">
+        <!--  <div class="btncontainer">
             <button>Seleccionar</button>
-          </div>
+          </div> -->
         </div>  
-        <!-- PLAN FULL -->
+        <!-- PLAN 5 -->
         <div class="plan">
-          <p class="title">Full</p>
+          <p class="title">PLAN 5</p>
           <div class="pricecontainer">
             <p class="price">$4.800</p>
             <p class="pricedescriptor">/mes</p>
@@ -138,25 +143,139 @@
             <li>5 CLASES POR SEMANA</li>
             <li> BICICLETA FIJA LIBRE</li>
           </ul>
-          <div class="btncontainer">
+          <!-- <div class="btncontainer">
             <button>Seleccionar</button>
+          </div> -->
+        </div>
+        
+      </section> 
+
+      <h2 class="planes__h2 container" >PLANES MENSULAES PILATES REFORMER + PILATES CON APARATOS "Estudio Pilates" <br> (* Se dictan dias Sabados 10am)</h2> 
+   
+      <section class="planes">
+        <!-- PLAN 6 -->
+        <div class="plan"> 
+          <p class="title">PLAN 6</p>
+          <div class="pricecontainer">
+            <p class="price">$4.200</p>
+            <p class="pricedescriptor">/mes</p>
+          </div>
+          <p class="includes">Este Plan Incluye:</p>
+          <ul class="benefitlist">
+            <li>1 CLASE POR SEMANA</li>
+            <br>
+          </ul>
+        <!--  <div class="btncontainer">
+            <button>Seleccionar</button>
+          </div> -->
+        </div>  
+        <!-- PLAN 7 -->
+        <div class="plan">
+          <p class="title">PLAN 7</p>
+          <div class="pricecontainer">
+            <p class="price">$4.500</p>
+            <p class="pricedescriptor">/mes</p>
+          </div>
+          <p class="includes">Este Plan Incluye:</p>
+          <ul class="benefitlist">
+            <li> 1 CLASE REFORMER POR SEMANA</li>
+            <li> 1 CLASE PILATES APARATOS POR SEMANA</li>
+            <li> BICICLETA FIJA LIBRE</li>
+          </ul>
+        <!--  <div class="btncontainer">
+            <button>Seleccionar</button>
+          </div> -->
+        </div>  
+        <!-- PLAN 8 -->
+        <div class="plan">
+          <p class="title">PLAN 8 </p>
+          <div class="pricecontainer">
+            <p class="price">$5.400</p>
+            <p class="pricedescriptor">/mes</p>
+          </div>
+          <p class="includes">Este Plan Incluye:</p>
+          <ul class="benefitlist">
+            <li> 2 CLASES REFORMER POR SEMANA</li>
+            <li> 1 CLASE PILATES APARATOS POR SEMANA</li>
+            <li> BICICLETA FIJA LIBRE</li>
+          </ul>
+        <!--  <div class="btncontainer">
+            <button>Seleccionar</button>
+          </div> -->
+        </div>  
+        <!-- PLAN 9-->
+        <div class="plan">
+          <p class="title">PLAN 9</p>
+          <div class="pricecontainer">
+            <p class="price">$5.700</p>
+            <p class="pricedescriptor">/mes</p>
+          </div>
+            <p class="includes">Este Plan Incluye:</p>
+            <ul class="benefitlist">
+              <li> 3 CLASES REFORMER POR SEMANA</li>
+              <li> 1 CLASE PILATES APARATOS POR SEMANA</li>
+              <li> BICICLETA FIJA LIBRE</li>
+            </ul>
+          <!-- <div class="btncontainer">
+            <button>Seleccionar</button>
+          </div> -->
+        </div>  
+        <!-- PLAN 10 -->
+        <div class="plan">
+          <p class="title">PLAN 10</p>
+          <div class="pricecontainer">
+            <p class="price">$6.300</p>
+            <p class="pricedescriptor">/mes</p>
+          </div>
+          <p class="includes">Este Plan Incluye:</p>
+          <ul class="benefitlist">
+            <li> 4 CLASE REFORMER POR SEMANA</li>
+            <li> 1 CLASE PILATES APARATOS POR SEMANA</li>
+            <li> BICICLETA FIJA LIBRE</li>
+          </ul>
+          <!-- <div class="btncontainer">
+            <button>Seleccionar</button>
+          </div> -->
+      </div>
+      <div class="plan">
+        <p class="title">PLAN BICICLETA FIJA</p>
+        <div class="pricecontainer">
+          <p class="price">$2000</p>
+          <p class="pricedescriptor">/mes</p>
+        </div>
+        <p class="includes">Este Plan Incluye:</p>
+        <ul class="benefitlist">
+          <li> LIBRE</li>
+          <li> DE LUNES A VIERNES</li>
+          <br>
+        </ul>
+        <!-- <div class="btncontainer">
+          <button>Seleccionar</button>
+        </div> -->
+    </div>
+    </section>
+<!--INSCRIPCIONES-->       
+      <section>
+        <div class="plan">
+          <p class="title">INSCRIPCION</p>
+          <div class="pricecontainer ">
+            <p class="price">$1.500</p>
+            <p class="pricedescriptor"> /única vez</p>
           </div>
         </div>
-      </section> 
-      
-      <!-- SECTION INSTALACIONES -->
-      <section class=" sectionInstalaciones  " id="instalaciones">
-            <h2 class="sectionInstalaciones__h2 " >INSTALACIONES</h2>
-            <article class="sectionInstalaciones__article   articleInstalaciones" >
-                   
-                    <div class="articleInstalaciones__div--disable" ><img class="articleInstalaciones__img--disable "         src= "./Images/Instalaciones/reformerCamilla.jpeg" alt="instalaciones-image1" > <p>Camilla Reformer</p> </div>
-                    <div class="articleInstalaciones__div--disable" ><img class="articleInstalaciones__img--disable" src="./Images/Instalaciones/pdct-Reformer-con-Torre.jpeg" alt="instalaciones-image2" > <p>Camilla Reformer con torre</p></div>
-                    <div class="articleInstalaciones__div--disable" ><img class="articleInstalaciones__img--disable" src="./Images/Instalaciones/pdct-TrapecioOK.jpeg" alt="instalaciones-image3" >   <p>Trapecio</p></div>
-                    <div class="articleInstalaciones__div--disable" ><img class="articleInstalaciones__img--disable" src="./Images/Instalaciones/pdct-Ladder-Barrel.jpeg" alt="instalaciones-image4" ><p> Barrel</p></div> 
-                    <div class="articleInstalaciones__div--disable" ><img class="articleInstalaciones__img--disable" src="./Images/Instalaciones/pdct-SpringboardOK.jpeg" alt="instalaciones-image4" ><p> Spring Board</p></div> 
-                    <div class="articleInstalaciones__div--disable" ><img class="articleInstalaciones__img--disable" src="./Images/Instalaciones/pdct-Combo-Chair.jpeg" alt="instalaciones-image4" > <p> Combo Chair</p></div>
-            </article>
+
+        <div class="plan">
+          <p class="title">INSCRIPCION + EVALUACION DE COMPOSICION CORPORAL</p>
+          <div class="pricecontainer">
+            <p class="price">$2.500</p>
+            <p class="pricedescriptor">/única vez</p>
+          </div>
+        
+          </div>
+       
       </section>
+      
+    
       <!-- SECTION HORARIOS -->
       <section class="sectionHorarios  "  id="horarios">
 
@@ -167,52 +286,119 @@
       </section>   
         
       <!-- SECTION INSTRUCTORES -->
-      <section class="sectionInstructores container" >
-          <h2 class="sectionInstructores__h2" >INSTRUCTORES</h2>
+      <section class="sectionInstructores container" id="instructores" >
+          <h2 class="sectionInstructores__h2" >NUESTRO EQUIPO</h2>
 
           <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
               <div class="card flip-vertical-bck">
-                <img  src="./Images/intructors/instructor MAnuel.jpeg" class="card-img-top  " alt="instructora-Lucia">
+              
                 <div class="card-body">
-                  <h3 class="card-title">Lucia</h3>
+                  <h3 class="card-title">Diana Albi</h3>
                   <p class="card-text">
-                    Directora General en Punto Pilates Mendoza.
-                      Instructora y Formadora en el Método Pilates en Punto Pilates Mendoza.</p>
+                    Fundadora y Directora Punto Pilates.
+                    Licenciada en Nutricion.
+                      Instructora de Pilates.
+                    Técnica Superior en Danzas Clásicas </p>
                 </div>
               </div>
             </div>
             <div class="col  col__Instructor ">
               <div class="card">
-                <img src="./Images/intructors/4.jpeg" class="card-img-top" alt="instructora-Florencia">
+             
                 <div class="card-body">
-                  <h3 class="card-title">Florencia</h3>
-                  <p class="card-text"> Instructora de Gimnasia Localizada y Pilates Mat. </p>
+                  <h3 class="card-title">Cristian Miralles</h3>
+                  <p class="card-text">  Fundador y Director Punto Pilates. </p>
                 </div>
               </div>
             </div>
             <div class="col col__Instructor ">
               <div class="card">
-                <img src="./Images/intructors/instructor4.jpeg" class="card-img-top" alt="instructor-Manuel">
+             
                 <div class="card-body">
-                  <h3 class="card-title">Manuel</h3>
-                  <p class="card-text">Tecnico Superior en Actividad Fisica y Deportes, CrossPilates, Entrenamiento Funcional, TRX, Hiit, CrossFitness.</p>
+                  <h3 class="card-title">Fernando Olmos</h3>
+                  <p class="card-text">Instructor de Pilates Reformer. Instructor de Pilates Mat. Bailarín. Formación en Esferadinamía.</p>
                 </div>
               </div>
             </div>
             <div class="col col__Instructor">
               <div class="card">
-                <img src="./Images/intructors/instructor3.jpeg" class="card-img-top" alt="instructor-Fernando">
+          
                 <div class="card-body">
-                  <h3 class="card-title">Fernando</h3>
-                  <p class="card-text"> Instructor de Pilates mat con elementos  / Entrenamiento Fisico    </p>
+                  <h3 class="card-title">Ariel Olmos</h3>
+                  <p class="card-text"> Instructor de Pilates Reformer Pilates Clásico. Formación: Curso de Personal Trainner para la estética corporal.   </p>
               </div>
             </div>
           </div>
+
+          <div class="col col__Instructor">
+            <div class="card">
+        
+              <div class="card-body">
+                <h3 class="card-title">Emmanuel Mena</h3>
+                <p class="card-text"> Instructor de Pilates Reformer Pilates Clásico. Estudiante de Medicina.    </p>
+            </div>
+          </div>
+        </div>
+        <div class="col col__Instructor">
+          <div class="card">
+      
+            <div class="card-body">
+              <h3 class="card-title">Manuel Davila</h3>
+              <p class="card-text">Instructor de Pilates Reformer
+                Formacion/Cursos
+                Formacion Workshop de Hypoapplied, Hipopresivos aplicados al Pilates y al entrenamiento funcional  </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col__Instructor">
+        <div class="card">
+    
+          <div class="card-body">
+            <h3 class="card-title">Victoria Lucero</h3>
+            <p class="card-text">Instructora de Pilates Reformer
+              Instructora de Pilates Mat
+              Estudiante de 4º año del Profesorado de Educacion Fisica
+              Formacion/Cursos:
+              Reanimación Cardiopulmonar (RCP).
+              Curso de Jueza de Gimnasia Artística Nacional: Categorías; D, C3, C2, C1.
+              Curso de Entrenamiento Funcional.  </p>
+        </div>
+      </div>
+    </div>
+    <div class="col col__Instructor">
+      <div class="card">
+  
+        <div class="card-body">
+          <h3 class="card-title">Ivana Moreno</h3>
+          <p class="card-text"> Instructor de Pilates Reformer.   </p>
+      </div>
+    </div>
+  </div>
+    <div class="col col__Instructor">
+      <div class="card">
+
+      <div class="card-body">
+        <h3 class="card-title">Emilia Murcia</h3>
+        <p class="card-text"> Recepcionista- Administrativa </p>
+      </div>
+      </div>
+      </div>
+    <div class="col col__Instructor">
+    <div class="card">
+
+      <div class="card-body">
+        <h3 class="card-title">Carla Cardinali</h3>
+        <p class="card-text"> Recepcionista - Administrativa    </p>
+      </div>
+    </div>
+    </div>
+                                
+
       </section>
 
       <!-- SECTION INSTITUCIONAL -->
-      <section class="institucional container "> 
+      <section class="institucional container " id="nosotros"> 
           <div class="institucional__mision" >
             <H2>MISION</H2>
             <div>
@@ -270,7 +456,7 @@
 
     </main> 
 
-         <!-- JavaScript Bundle with Popper -->
+      <!-- JavaScript Bundle with Popper -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
       
   </bo  dy>

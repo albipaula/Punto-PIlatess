@@ -22,9 +22,9 @@ display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: repeat(7,auto);
 grid-template-areas: "header"
-                     "sectionInstalaciones"
                      "sectionHorarios"
                      "sectionInstructores"
+                     "sectioNosotros"
                      "sectionContacto"
                      "footer"   ;
 
@@ -50,7 +50,7 @@ a:hover{
     padding: 20px;
     border-radius: 10px;
     width:min-content;
-    transition: 0.28ms;
+    transition: 5s;
 }
 
 

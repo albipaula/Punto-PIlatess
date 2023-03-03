@@ -12,10 +12,12 @@ $secondColor:#FF99C8;
     align-items: center; 
     background-color:$principalColor;
     padding: 10px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 }
+
+
 
   .articleInstalaciones__img--disable{
     display: none;
@@ -27,64 +29,64 @@ p{ text-align: center;}
 .planes__h2 {  text-align: center;margin: 20px;}
 
 .plan {
-   width: auto;
-   text-align: center;
-   background: $principalColor;
-   box-shadow: 0px 0px 20px $thirdColor;
-   transition-duration: 0.5s;
-   margin: 20px;
-   padding-bottom: 20px; 
+  width: auto;
+  text-align: center;
+  background: $principalColor;
+  box-shadow: 0px 0px 20px $thirdColor;
+  transition-duration: 0.5s;
+  margin: 20px;
+  padding-bottom: 20px; 
 }
   
   .title {
-   text-align: center;
-   margin-top: 0.5em;
-   font-weight: bold;
-   font-size: x-large;
-   
+  text-align: center;
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-size: x-large;
+  
   }
   
   .pricecontainer {
-   width: 100%;
-   margin-top: 0.7em;
-   background-color: $thirdColor;
-   box-shadow: inset 0px 0px 2em $thirdColor;
+  width: 100%;
+  margin-top: 0.7em;
+  background-color: $thirdColor;
+  box-shadow: inset 0px 0px 2em $thirdColor;
   }
   
   .price {
-   text-align: center;
-   font-size: x-large;
-   font-weight: bold;
-   padding: 0.75em 0 0 0;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 0.75em 0 0 0;
   }
   
   .pricedescriptor {
-   text-align: center;
-   color: rgb(118, 118, 118);
-   font-size: medium;
-   padding: 0 0 1em 0;
+  text-align: center;
+  color: rgb(118, 118, 118);
+  font-size: medium;
+  padding: 0 0 1em 0;
   }
   
   .includes {
-   text-align: center;
-   height: auto;
-   color: rgb(110, 110, 110);
-   margin-top: 0.6em;
-   font-size: small;
-   font-weight: bold;
+  text-align: center;
+  height: auto;
+  color: rgb(110, 110, 110);
+  margin-top: 0.6em;
+  font-size: small;
+  font-weight: bold;
   }
   
   .benefitlist
-   li {
-   font-size: large;
-   text-align: center;
-   
+  li {
+  font-size: large;
+  text-align: center;
+  
   }
   
   .benefitlist li:nth-child(1) {
-   margin-top: 0.4em;
+  margin-top: 0.4em;
 
-   
+
 
   }
   
@@ -150,18 +152,50 @@ button:active:before {
   padding: 20px;
 }
 
- }
+
+/* .sectionHorarios__table { 
+
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+table.GeneratedTable {
+  width: auto;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #354638;
+  border-style: solid;
+  color: #000000;
+  text-align: center;
+
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #354638;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.GeneratedTable thead {
+  background-color: $principalColor;
+} */
+
+}
 
 
  /* vista desktop */
 @media (min-width: 768px){
 
-.sectionHorarios  {
+.sectionHorarios__animated  {
+ 
     text-align: center; 
-    padding-bottom: 300px;
-    padding-top: 300px; 
+    padding-top: 50px;
 }
 
+.planes__p { text-align: justify;}
 
 .planes{ 
 
@@ -171,8 +205,7 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 align-content: center;
-width: 100%;
-height: auto;
+width: 50%;
 
 
 }
@@ -237,7 +270,6 @@ height: auto;
   .benefitlist li:nth-child(1) {
    margin-top: 0.4em;
 
-   
 
   }
   
@@ -291,13 +323,55 @@ button:hover:before {
 
 button:active:before {
  background: #3a0ca3;
- transition: background 0s;
+ transition:  0s;
 }
 
 .footer { 
 
   padding: 20px;
 }
+
+.sectionHorarios__table { 
+
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+
+}
+
+.inscripciones { 
+  display: flex;
+  flex-direction: row;
+  width: 30%;}
+
+table.GeneratedTable {
+  width: 50%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #354638;
+  border-style: solid;
+  color: #000000;
+  text-align: center;
+
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #354638;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.GeneratedTable thead {
+  background-color: $principalColor;
+}
+
+
+
+
+
+
 
 } 
 

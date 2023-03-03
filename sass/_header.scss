@@ -10,5 +10,11 @@ $secondColor:#FF99C8;
         
             max-width: 30vh;
         }
-     .fucsia { background-color:  $secondColor; width: 100%; height: 20px; z-index: 50; position: fixed;}
-     .amarillo{ background-color: $thirdColor;  }           
+
+    .fucsia { 
+        background-color:  $secondColor;
+        width: 100%;
+        height: 20px; 
+        z-index: 50; 
+        position: fixed;}
+
