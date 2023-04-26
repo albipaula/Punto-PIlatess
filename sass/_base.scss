@@ -19,16 +19,20 @@ body {
 .gridContainer { 
 
 display: grid;
-grid-template-columns: 1fr;
+grid-template-columns: auto;
 grid-template-rows: repeat(7,auto);
-grid-template-areas: "header"
-                     "sectionHorarios"
-                     "sectionInstructores"
-                     "sectioNosotros"
-                     "sectionContacto"
-                     "footer"   ;
+grid-template-areas: ' header'
+                        'portada'
+                        'planes1'
+                        'planes'
+                     'sectionHorarios'
+                     'sectionInstructores'
+                     'institucional'
+                     'sectionContacto'
+                     'footer'   ;
 
 overflow-x:  hidden;
+gap: 30px;
 
 }
 
@@ -37,6 +41,7 @@ a:link {
 
     color: rgb(15, 15, 15);
     font-size: larger;
+    
     }
 
 a:visited{

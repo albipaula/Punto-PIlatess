@@ -6,7 +6,8 @@ $secondColor:#FF99C8;
 
 
 .sectionHorarios {
-
+grid-area: sectionHorarios;
+width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -19,16 +20,17 @@ $secondColor:#FF99C8;
 
 
 
-  .articleInstalaciones__img--disable{
+/*   .articleInstalaciones__img--disable{
     display: none;
 
-}
+} */
 
 p{ text-align: center;}
 .planes__mobile { padding-top: 200px;}
 .planes__h2 {  text-align: center;margin: 20px;}
 
 .plan {
+
   width: auto;
   text-align: center;
   background: $principalColor;
@@ -51,6 +53,7 @@ p{ text-align: center;}
   margin-top: 0.7em;
   background-color: $thirdColor;
   box-shadow: inset 0px 0px 2em $thirdColor;
+  div { margin: 10px;}
   }
   
   .price {
@@ -148,7 +151,7 @@ button:active:before {
 }
 
 .footer { 
-
+grid-area: footer;
   padding: 20px;
 }
 
@@ -196,24 +199,41 @@ table.GeneratedTable thead {
 }
 
 .planes__p { text-align: justify;}
+.planes1 { 
+  grid-area: planes1;
+  display: flex;
+  padding: 10px;
+  margin-right: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  div {  min-width:250px; height: auto;}
+  
+}
 
 .planes{ 
-
+grid-area: planes;
 display: flex;
+margin-right: 30px;
+
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 align-content: center;
-width: 50%;
+width: 100%;
 
+div {  width: 250px; height: auto;}
 
 }
 
 .planes__h2 { padding-top: 200px;}
 
 .plan {
-   width: auto;
+   width: max-content;
    text-align: center;
    background: $principalColor;
    box-shadow: 0px 0px 20px $thirdColor;
@@ -231,7 +251,7 @@ width: 50%;
   }
   
   .pricecontainer {
-   width: 100%;
+   width: 90%;
    margin-top: 0.7em;
    background-color: $thirdColor;
    box-shadow: inset 0px 0px 2em $thirdColor;

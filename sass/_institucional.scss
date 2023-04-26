@@ -4,14 +4,16 @@ $secondColor:#FF99C8;
  /* vista mobile  */
  @media  (max-width: 767px){
 
-.institucional { display: none;}
+.institucional { display: none ;grid-area:institucional ;}
         
 
  }
  /* vista desktop */
  @media (min-width:768px){
 .institucional { 
+    grid-area: institucional;
 display: flex;
+gap: 20px;
 flex-direction: column;
 padding-top: 100px;
 padding-bottom: 100px;
