@@ -496,7 +496,7 @@ input, textarea {
   }
   .plan {
     min-width: 100px;
-    max-width: 200px;
+    max-width: 150px;
     height: 400px;
     text-align: center;
     background: rgba(178, 221, 216, 0.5960784314);
