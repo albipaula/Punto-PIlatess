@@ -25,15 +25,26 @@
     p{ text-align: center;}
     .planes__mobile { padding-top: 200px;}
     
-    
+
+    .planes-container { display: flex; 
+        flex-direction: row;
+         flex-wrap: wrap; 
+         justify-content: center; 
+         align-items: center;
+
+       
+       }
+       .inscripcion{ display: flex; align-items: center; justify-content: center;}
     .plan {
     
-      width: auto;
+     min-width: 100px;
+     max-width: 200px;
+     height: 400px;
       text-align: center;
       background: $principalColor;
       box-shadow: 0px 0px 20px $thirdColor;
       transition-duration: 0.5s;
-      margin: 20px;
+      margin: 10px;
       padding-bottom: 20px; 
     }
       
@@ -42,7 +53,7 @@
       margin-top: 0.5em;
       font-weight: bold;
       font-size: x-large;
-      
+    
       }
       
       .pricecontainer {
@@ -83,12 +94,7 @@
       
       }
       
-      .benefitlist li:nth-child(1) {
-      margin-top: 0.4em;
     
-    
-    
-      }
       
     ol,
     ul {
@@ -234,11 +240,8 @@
    
 
     /* vista mobile  */
- @media  (max-width: 767px){
 
-    .articleInstructores__img--disable, .col__Instructor { 
-            display: none;
-        }
+
     
     .articleInstructores__img { width: 80%;}
         
@@ -248,9 +251,10 @@
             width: auto;
             flex-direction: column;
             align-items: center; 
+            .row { padding-top: 50px;}
+        }
+ 
+
             
-        }
-        
-    .sectionInstructores{ padding-top: 200px; }
-        }
+  .card {  padding-top: 30px; max-width: 150px; text-align: center; .card-text { display: none;}}
         
