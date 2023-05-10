@@ -34,12 +34,16 @@
 
        
        }
-       .inscripcion{ display: flex; align-items: center; justify-content: center;}
-    .plan {
+.inscripcion{ 
+        display: flex; 
+        align-items: center;
+         justify-content: center;
+        }
+.plan {
     
-     min-width: 100px;
-     max-width: 150px;
-     height: 600px;
+     min-width: 150px;
+     max-width: 170px;
+     height: 530px;
       text-align: center;
       background: $principalColor;
       box-shadow: 0px 0px 20px $thirdColor;
@@ -48,7 +52,7 @@
       padding-bottom: 20px; 
     }
       
-      .title {
+.title {
       text-align: center;
       margin-top: 0.5em;
       font-weight: bold;
@@ -56,7 +60,7 @@
     
       }
       
-      .pricecontainer {
+.pricecontainer {
       width: 100%;
       margin-top: 0.7em;
       background-color: $thirdColor;
@@ -64,21 +68,21 @@
       div { margin: 10px;}
       }
       
-      .price {
+.price {
       text-align: center;
       font-size: x-large;
       font-weight: bold;
       padding: 0.75em 0 0 0;
       }
       
-      .pricedescriptor {
+.pricedescriptor {
       text-align: center;
       color: rgb(118, 118, 118);
       font-size: medium;
       padding: 0 0 1em 0;
       }
       
-      .includes {
+.includes {
       text-align: center;
       height: auto;
       color: rgb(110, 110, 110);
@@ -87,30 +91,24 @@
       font-weight: bold;
       }
       
-      .benefitlist
-      li {
-      font-size: large;
-      text-align: center;
-      
-      }
+
       
     
       
-    ol,
-    ul {
-      padding: 2rem;
+ol,ul {
+
+    padding: 2rem;
     }
-      .btncontainer {
-       text-align: center;
-      }
+
+.btncontainer {
+    text-align: center;
+    }
       
     
-      
-    
-    
-    .btncontainer button {
+
+.btncontainer button {
+
      --color: #FCF6BD;
-    
      display: inline-block;
      width: 8em;
      height: 2.6em;
@@ -127,7 +125,7 @@
     
     }
     
-    button:before {
+button:before {
      content: "";
      position: absolute;
      z-index: -1;
@@ -137,23 +135,23 @@
      border-radius: 50%;
     }
     
-    button:before {
+button:before {
      top: 100%;
      left: 100%;
      transition: all .7s;
     }
     
-    button:hover:before {
+button:hover:before {
      top: -30px;
      left: -30px;
     }
     
-    button:active:before {
+button:active:before {
      background: $thirdColor;
      transition: background 0s;
     }
     
-    .footer { 
+.footer { 
     grid-area: footer;
       padding: 20px;
     }
@@ -202,15 +200,12 @@
    
    .sectionContacto__h2{ display: none;}
    
-   .sectionHorarios { grid-area: sectionHorarios;}
+
    
    
-    .sectionContacto, .footer  {
+ .footer  {
    
-       display: flex;
-       flex-direction: column;
-       align-items: center; 
-       
+    text-align: center;
    }
    
  
@@ -236,16 +231,15 @@
    
    
     .sectionContacto{ padding-top: 300px; }
-   }
    
-
+   
     /* vista mobile  */
 
 
     
-    .articleInstructores__img { width: 80%;}
+.articleInstructores__img { width: 80%;}
         
-    .sectionInstructores, .articleInstructores__a {
+.sectionInstructores, .articleInstructores__a {
         
             display: flex;
             width: auto;
@@ -256,5 +250,5 @@
  
 
             
-  .card {  padding-top: 30px; max-width: 150px; text-align: center; .card-text { display: none;}}
+  .card {  padding-top: 30px; max-width: 150px; text-align: center; .card-text{ display: none;}}}
         

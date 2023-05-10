@@ -36,6 +36,7 @@
 
 .plan {
   width: 250px;
+  height: 400px;
   text-align: center;
   background: $principalColor;
   box-shadow: 0px 0px 20px $thirdColor;
@@ -43,7 +44,15 @@
   margin: 20px;
  
 }
-  
+.inscripcion{  
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+
+  .plan { height: 250px;}
+
+}
+
   .title {
    text-align: center;
    padding: 23px;
