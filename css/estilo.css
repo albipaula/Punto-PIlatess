@@ -462,6 +462,9 @@ input, textarea {
 }
 /* vista mobile  */
 @media (max-width: 767px) {
+  .portada {
+    margin-top: 0;
+  }
   .sectionHorarios {
     grid-area: sectionHorarios;
     display: flex;
