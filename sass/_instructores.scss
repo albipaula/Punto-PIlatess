@@ -1,34 +1,34 @@
- /* vista mobile  */
- @media  (max-width: 767px){
+.grid { 
 
-.articleInstructores__img--disable, .col__Instructor { 
-        display: none;
-    }
 
-.articleInstructores__img { width: 80%;}
-    
-.sectionInstructores, .articleInstructores__a {
-    
-        display: flex;
-        width: auto;
-        flex-direction: column;
-        align-items: center; 
-        
-    }
-    
-.sectionInstructores{ padding-top: 200px; }
-    }
-    
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3,auto);
+  grid-template-areas: 'header' 
+  'sectionInstructores'
+  'contacto'
+  'footer';
+}
+
+.header { grid-area: header;}
+
+.sectionInstalaciones{ grid-area: sectionInstalaciones; }
+.contacto {grid-area: contacto;}
+.footer {grid-area: footer;}
+
   /* vista desktop */
   @media (min-width: 768px){
 
 
+
+.card-body { height: auto;}
+    
 .sectionInstructores { 
         text-align: center; 
         padding-bottom: 50px;
         grid-area: sectionInstructores;
-        }
-.sectionInstructores { padding-top: 300px; }
+        padding-top: 200px;
+ }
         
             
 .articleInstructores__a  {
@@ -37,16 +37,16 @@
             flex-direction: column;
             align-items: center; 
             justify-content: space-around;
-            background-color:#cadcda81;
+            background-color:$principalColor;
             padding: 30px;
             
 
-            p { 
-                text-align: center;
+            li,h3{ 
+                text-align: center; padding: 30px; font-size: 1.5rem;
               } 
             
 }   
-                
+        
 }
         
         

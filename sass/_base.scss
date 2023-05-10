@@ -1,14 +1,19 @@
+$principalColor:  #b2ddd898;
+$thirdColor:#FCF6BD;
+$secondColor:#FF99C8;
+
 /* css general */
 *{
     margin: 0;
     padding: 0; 
     list-style: none; 
     text-decoration: none;
-    box-sizing: border-box;
+   
     
 }
 
-body { 
+html { overflow-x:  hidden;}
+body {  box-sizing: border-box;
 
     font-family: 'Dosis', sans-serif;
     font-size: 25px;
@@ -16,31 +21,13 @@ body {
 
 }
 
-.gridContainer { 
-
-display: grid;
-grid-template-columns: auto;
-grid-template-rows: repeat(7,auto);
-grid-template-areas: ' header'
-                        'portada'
-                        'planes1'
-                        'planes'
-                     'sectionHorarios'
-                     'sectionInstructores'
-                     'institucional'
-                     'sectionContacto'
-                     'footer'   ;
-
-overflow-x:  hidden;
-gap: 30px;
-
-}
-
-
+h2 { font-size: 2rem;}
+h3 { font-size: 1rem;}
+p { font-size: 1rem;  }
 a:link {
 
     color: rgb(15, 15, 15);
-    font-size: larger;
+   font-size: 2rem;
     
     }
 
@@ -59,7 +46,36 @@ a:hover{
 }
 
 
+.gridContainer { 
 
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: repeat(9,auto);
+grid-template-areas: ' header'
+                        'portada'
+                        'planes1'
+                        'planes'
+                     'sectionHorarios'
+                     'sectionInstructores'
+                     'institucional'
+                     'contacto'
+                     'footer'   ;
+
+
+gap: 100px;
+
+}
+
+
+.header { grid-area: header;}
+.portada { grid-area: portada;}
+.planes1 { grid-area: planes1;}
+.planes { grid-area: planes;}
+.sectionHorarios { grid-area: sectionHorarios;}
+.sectionInstructores { grid-area: sectionInstructores;}
+.institucional { grid-area: institucional;}
+.contacto { grid-area: contacto;}
+.footer { grid-area: footer;}
 input, textarea{
     margin: 0 auto; /* Centramos el formulario */
     width: 300px;   /* Sin ancho no podemos centrar el formulario */

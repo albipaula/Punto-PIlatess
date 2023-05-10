@@ -2,6 +2,11 @@ $principalColor:  #b2ddd898;
 $thirdColor:#FCF6BD;
 $secondColor:#FF99C8;
 
+
+.portada  {  img { width: 100%; height: auto;}}
+.portada__img { opacity: 0.8; }
+
+.navbar-expand-lg .navbar-collapse { justify-content: flex-end; }  
 .navbar { 
     background-color: $principalColor ;
         }
@@ -10,11 +15,4 @@ $secondColor:#FF99C8;
         
             max-width: 30vh;
         }
-
-    .fucsia { 
-        background-color:  $secondColor;
-        width: 100%;
-        height: 20px; 
-        z-index: 50; 
-        position: fixed;}
 

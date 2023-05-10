@@ -1,257 +1,61 @@
-$principalColor:  #b2ddd898;
-$thirdColor:#FCF6BD;
-$secondColor:#FF99C8;
- /* vista mobile  */
- @media  (max-width: 767px){
+
+ /* vista desktop */
+@media (min-width: 768px){
+
+  .sectionHorarios {text-align: center;}
+
+ 
 
 
-.sectionHorarios {
-grid-area: sectionHorarios;
-width: 100%;
+.planes1 , .planes { 
+ 
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+
+  .planes-container{ 
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    background-color:$principalColor;
-    padding: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+  
+  div {max-width: 200px;}
+  }
+  
 }
 
 
 
-/*   .articleInstalaciones__img--disable{
-    display: none;
 
-} */
-
-p{ text-align: center;}
-.planes__mobile { padding-top: 200px;}
-.planes__h2 {  text-align: center;margin: 20px;}
 
 .plan {
-
-  width: auto;
+  width: 250px;
   text-align: center;
   background: $principalColor;
   box-shadow: 0px 0px 20px $thirdColor;
   transition-duration: 0.5s;
   margin: 20px;
-  padding-bottom: 20px; 
-}
-  
-  .title {
-  text-align: center;
-  margin-top: 0.5em;
-  font-weight: bold;
-  font-size: x-large;
-  
-  }
-  
-  .pricecontainer {
-  width: 100%;
-  margin-top: 0.7em;
-  background-color: $thirdColor;
-  box-shadow: inset 0px 0px 2em $thirdColor;
-  div { margin: 10px;}
-  }
-  
-  .price {
-  text-align: center;
-  font-size: x-large;
-  font-weight: bold;
-  padding: 0.75em 0 0 0;
-  }
-  
-  .pricedescriptor {
-  text-align: center;
-  color: rgb(118, 118, 118);
-  font-size: medium;
-  padding: 0 0 1em 0;
-  }
-  
-  .includes {
-  text-align: center;
-  height: auto;
-  color: rgb(110, 110, 110);
-  margin-top: 0.6em;
-  font-size: small;
-  font-weight: bold;
-  }
-  
-  .benefitlist
-  li {
-  font-size: large;
-  text-align: center;
-  
-  }
-  
-  .benefitlist li:nth-child(1) {
-  margin-top: 0.4em;
-
-
-
-  }
-  
-ol,
-ul {
-  padding: 2rem;
-}
-  .btncontainer {
-   text-align: center;
-  }
-  
-
-  
-
-
-.btncontainer button {
- --color: #FCF6BD;
-
- display: inline-block;
- width: 8em;
- height: 2.6em;
- line-height: 2.5em;
- margin: 20px;
- position: relative;
- overflow: hidden;
- border: 2px solid var(--color);
- transition: color .5s;
- z-index: 1;
- font-size: 17px;
- border-radius: 6px;
- font-weight: 500;
-
-}
-
-button:before {
- content: "";
- position: absolute;
- z-index: -1;
- background: var(--color);
- height: 150px;
- width: 200px;
- border-radius: 50%;
-}
-
-button:before {
- top: 100%;
- left: 100%;
- transition: all .7s;
-}
-
-button:hover:before {
- top: -30px;
- left: -30px;
-}
-
-button:active:before {
- background: #3a0ca3;
- transition: background 0s;
-}
-
-.footer { 
-grid-area: footer;
-  padding: 20px;
-}
-
-
-/* .sectionHorarios__table { 
-
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-}
-
-table.GeneratedTable {
-  width: auto;
-  background-color: #ffffff;
-  border-collapse: collapse;
-  border-width: 2px;
-  border-color: #354638;
-  border-style: solid;
-  color: #000000;
-  text-align: center;
-
-}
-
-table.GeneratedTable td, table.GeneratedTable th {
-  border-width: 2px;
-  border-color: #354638;
-  border-style: solid;
-  padding: 3px;
-}
-
-table.GeneratedTable thead {
-  background-color: $principalColor;
-} */
-
-}
-
-
- /* vista desktop */
-@media (min-width: 768px){
-
-.sectionHorarios__animated  {
  
-    text-align: center; 
-    padding-top: 50px;
-}
-
-.planes__p { text-align: justify;}
-.planes1 { 
-  grid-area: planes1;
-  display: flex;
-  padding: 10px;
-  margin-right: 30px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-  div {  min-width:250px; height: auto;}
-  
-}
-
-.planes{ 
-grid-area: planes;
-display: flex;
-margin-right: 30px;
-
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-align-content: center;
-width: 100%;
-
-div {  width: 250px; height: auto;}
-
-}
-
-.planes__h2 { padding-top: 200px;}
-
-.plan {
-   width: max-content;
-   text-align: center;
-   background: $principalColor;
-   box-shadow: 0px 0px 20px $thirdColor;
-   transition-duration: 0.5s;
-   margin: 20px;
-   padding-bottom: 20px; 
 }
   
   .title {
    text-align: center;
-   margin-top: 0.5em;
+   padding: 23px;
    font-weight: bold;
-   font-size: x-large;
+   height: auto; 
+
+  
    
   }
   
   .pricecontainer {
-   width: 90%;
+   width: 100%;
    margin-top: 0.7em;
    background-color: $thirdColor;
    box-shadow: inset 0px 0px 2em $thirdColor;
@@ -259,7 +63,7 @@ div {  width: 250px; height: auto;}
   
   .price {
    text-align: center;
-   font-size: x-large;
+   font-size: 1.5rem;
    font-weight: bold;
    padding: 0.75em 0 0 0;
   }
@@ -267,7 +71,7 @@ div {  width: 250px; height: auto;}
   .pricedescriptor {
    text-align: center;
    color: rgb(118, 118, 118);
-   font-size: medium;
+   font-size: 1rem;
    padding: 0 0 1em 0;
   }
   
@@ -276,13 +80,13 @@ div {  width: 250px; height: auto;}
    height: auto;
    color: rgb(110, 110, 110);
    margin-top: 0.6em;
-   font-size: small;
+   font-size: 1rem;
    font-weight: bold;
   }
   
   .benefitlist
    li {
-   font-size: large;
+   font-size: 1rem;
    text-align: center;
    
   }
@@ -293,11 +97,11 @@ div {  width: 250px; height: auto;}
 
   }
   
-ol,
+
 ul {
   padding: 2rem;
 }
-  .btncontainer {
+  /* .btncontainer {
    text-align: center;
   }
   
@@ -318,7 +122,7 @@ ul {
  border-radius: 6px;
  font-weight: 500;
 
-}
+} */
 
 button:before {
  content: "";
@@ -351,20 +155,15 @@ button:active:before {
   padding: 20px;
 }
 
-.sectionHorarios__table { 
+.sectionHorarios { 
 
-  display: flex;
-  justify-content: center;
-  padding: 15px;
+  padding-top: 15px;
 
 }
 
-.inscripciones { 
-  display: flex;
-  flex-direction: row;
-  width: 30%;}
 
-table.GeneratedTable {
+
+/* table.GeneratedTable {
   width: 50%;
   background-color: #ffffff;
   border-collapse: collapse;
@@ -386,7 +185,7 @@ table.GeneratedTable td, table.GeneratedTable th {
 table.GeneratedTable thead {
   background-color: $principalColor;
 }
-
+ */
 
 
 

@@ -5,27 +5,34 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
+  box-sizing: border-box;
   font-family: "Dosis", sans-serif;
   font-size: 25px;
   font-weight: bolder;
 }
 
-.gridContainer {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(7, auto);
-  grid-template-areas: " header" "portada" "planes1" "planes" "sectionHorarios" "sectionInstructores" "institucional" "sectionContacto" "footer";
-  overflow-x: hidden;
-  gap: 30px;
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 a:link {
   color: rgb(15, 15, 15);
-  font-size: larger;
+  font-size: 2rem;
 }
 
 a:visited {
@@ -40,6 +47,50 @@ a:hover {
   transition: 5s;
 }
 
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(9, auto);
+  grid-template-areas: " header" "portada" "planes1" "planes" "sectionHorarios" "sectionInstructores" "institucional" "contacto" "footer";
+  gap: 100px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.portada {
+  grid-area: portada;
+}
+
+.planes1 {
+  grid-area: planes1;
+}
+
+.planes {
+  grid-area: planes;
+}
+
+.sectionHorarios {
+  grid-area: sectionHorarios;
+}
+
+.sectionInstructores {
+  grid-area: sectionInstructores;
+}
+
+.institucional {
+  grid-area: institucional;
+}
+
+.contacto {
+  grid-area: contacto;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 input, textarea {
   margin: 0 auto; /* Centramos el formulario */
   width: 300px; /* Sin ancho no podemos centrar el formulario */
@@ -49,20 +100,25 @@ input, textarea {
   margin-top: 10px;
 }
 
+.portada img {
+  width: 100%;
+  height: auto;
+}
+
+.portada__img {
+  opacity: 0.8;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
 .navbar {
   background-color: rgba(178, 221, 216, 0.5960784314);
 }
 
 .header__logo {
   max-width: 30vh;
-}
-
-.fucsia {
-  background-color: #FF99C8;
-  width: 100%;
-  height: 20px;
-  z-index: 50;
-  position: fixed;
 }
 
 /* vista mobile  */
@@ -96,6 +152,29 @@ input, textarea {
   }
 }
 /* vista mobile  */
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header" "sectionInstalaciones" "contacto" "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.sectionInstalaciones {
+  grid-area: sectionInstalaciones;
+}
+
+.contacto {
+  grid-area: contacto;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 @media (max-width: 767px) {
   .articleInstalaciones__img--disable {
     display: none;
@@ -106,85 +185,288 @@ input, textarea {
   .articleInstalaciones__div--flex {
     text-align: center;
   }
-  .articleInstalaciones__img {
-    width: 80%;
-  }
-  .sectionInstalaciones {
-    padding-top: 150px;
-    display: flex;
-    justify-content: center;
-  }
 }
 /* vista desktop */
 @media (min-width: 768px) {
   .sectionInstalaciones {
     text-align: center;
     padding-bottom: 50px;
-    padding-top: 300px;
+    padding-top: 200px;
   }
   .articleInstalaciones {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(202, 220, 218, 0.5058823529);
+    background-color: rgba(178, 221, 216, 0.5960784314);
     padding: 30px;
   }
   .articleInsatalaciones__div--flex {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 80px;
   }
   .articleInstalaciones__img, .articleInstalaciones__img--disable {
-    border-radius: 20px;
+    border-radius: 20%;
     padding-top: 20px;
   }
 }
-/* vista mobile  */
-@media (max-width: 767px) {
-  .articleInstructores__img--disable, .col__Instructor {
-    display: none;
-  }
-  .articleInstructores__img {
-    width: 80%;
-  }
-  .sectionInstructores, .articleInstructores__a {
-    display: flex;
-    width: auto;
-    flex-direction: column;
-    align-items: center;
-  }
-  .sectionInstructores {
-    padding-top: 200px;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header" "sectionInstructores" "contacto" "footer";
 }
+
+.header {
+  grid-area: header;
+}
+
+.sectionInstalaciones {
+  grid-area: sectionInstalaciones;
+}
+
+.contacto {
+  grid-area: contacto;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 /* vista desktop */
 @media (min-width: 768px) {
+  .card-body {
+    height: auto;
+  }
   .sectionInstructores {
     text-align: center;
     padding-bottom: 50px;
     grid-area: sectionInstructores;
-  }
-  .sectionInstructores {
-    padding-top: 300px;
+    padding-top: 200px;
   }
   .articleInstructores__a {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(202, 220, 218, 0.5058823529);
+    background-color: rgba(178, 221, 216, 0.5960784314);
     padding: 30px;
   }
-  .articleInstructores__a p {
+  .articleInstructores__a li, .articleInstructores__a h3 {
     text-align: center;
+    padding: 30px;
+    font-size: 1.5rem;
+  }
+}
+/* vista desktop */
+@media (min-width: 768px) {
+  .sectionHorarios {
+    text-align: center;
+  }
+  .planes1, .planes {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .planes1 .planes-container, .planes .planes-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .planes1 .planes-container div, .planes .planes-container div {
+    max-width: 200px;
+  }
+  .plan {
+    width: 250px;
+    text-align: center;
+    background: rgba(178, 221, 216, 0.5960784314);
+    box-shadow: 0px 0px 20px #FCF6BD;
+    transition-duration: 0.5s;
+    margin: 20px;
+  }
+  .title {
+    text-align: center;
+    padding: 23px;
+    font-weight: bold;
+    height: auto;
+  }
+  .pricecontainer {
+    width: 100%;
+    margin-top: 0.7em;
+    background-color: #FCF6BD;
+    box-shadow: inset 0px 0px 2em #FCF6BD;
+  }
+  .price {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75em 0 0 0;
+  }
+  .pricedescriptor {
+    text-align: center;
+    color: rgb(118, 118, 118);
+    font-size: 1rem;
+    padding: 0 0 1em 0;
+  }
+  .includes {
+    text-align: center;
+    height: auto;
+    color: rgb(110, 110, 110);
+    margin-top: 0.6em;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .benefitlist li {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .benefitlist li:nth-child(1) {
+    margin-top: 0.4em;
+  }
+  ul {
+    padding: 2rem;
+  }
+  /* .btncontainer {
+     text-align: center;
+    }
+
+  .btncontainer button {
+   --color: #FCF6BD;
+
+   display: inline-block;
+   width: 8em;
+   height: 2.6em;
+   line-height: 2.5em;
+   margin: 20px;
+   position: relative;
+   overflow: hidden;
+   border: 2px solid var(--color);
+   transition: color .5s;
+   z-index: 1;
+   font-size: 17px;
+   border-radius: 6px;
+   font-weight: 500;
+
+  } */
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  button:active:before {
+    background: #3a0ca3;
+    transition: 0s;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .sectionHorarios {
+    padding-top: 15px;
+  }
+  /* table.GeneratedTable {
+    width: 50%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #354638;
+    border-style: solid;
+    color: #000000;
+    text-align: center;
+
+  }
+
+  table.GeneratedTable td, table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #354638;
+    border-style: solid;
+    padding: 3px;
+  }
+
+  table.GeneratedTable thead {
+    background-color: $principalColor;
+  }
+   */
+}
+/* vista desktop */
+@media (min-width: 768px) {
+  .contacto {
+    background: rgba(178, 221, 216, 0.5960784314);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sectionContacto--desktop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .sectionContacto__container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    padding: 30px;
+  }
+  .sectionContacto__container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    font-size: 50px;
+  }
+  .sectionContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+  }
+  .formContacto {
+    margin: 0 auto; /* Centramos el formulario */
+    width: 300px; /* Sin ancho no podemos centrar el formulario */
+    /* separamos los bordes del form del resto de elementos */
+    border-radius: 10px; /* Redondeamos los bordes del form */
+  }
+  .formContacto__button {
+    margin-top: 10px; /* Damos un margen individual para el contenedor del botón */
+    width: 60%;
+    margin-left: 15%;
+    border-radius: 10px;
+  }
+  .formContact__input {
+    padding-bottom: 30px;
   }
 }
 /* vista mobile  */
 @media (max-width: 767px) {
   .sectionHorarios {
     grid-area: sectionHorarios;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,10 +484,6 @@ input, textarea {
   }
   .planes__mobile {
     padding-top: 200px;
-  }
-  .planes__h2 {
-    text-align: center;
-    margin: 20px;
   }
   .plan {
     width: auto;
@@ -300,7 +578,7 @@ input, textarea {
     left: -30px;
   }
   button:active:before {
-    background: #3a0ca3;
+    background: #FCF6BD;
     transition: background 0s;
   }
   .footer {
@@ -336,178 +614,7 @@ input, textarea {
   table.GeneratedTable thead {
     background-color: $principalColor;
   } */
-}
-/* vista desktop */
-@media (min-width: 768px) {
-  .sectionHorarios__animated {
-    text-align: center;
-    padding-top: 50px;
-  }
-  .planes__p {
-    text-align: justify;
-  }
-  .planes1 {
-    grid-area: planes1;
-    display: flex;
-    padding: 10px;
-    margin-right: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-  }
-  .planes1 div {
-    min-width: 250px;
-    height: auto;
-  }
-  .planes {
-    grid-area: planes;
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-  }
-  .planes div {
-    width: 250px;
-    height: auto;
-  }
-  .planes__h2 {
-    padding-top: 200px;
-  }
-  .plan {
-    width: max-content;
-    text-align: center;
-    background: rgba(178, 221, 216, 0.5960784314);
-    box-shadow: 0px 0px 20px #FCF6BD;
-    transition-duration: 0.5s;
-    margin: 20px;
-    padding-bottom: 20px;
-  }
-  .title {
-    text-align: center;
-    margin-top: 0.5em;
-    font-weight: bold;
-    font-size: x-large;
-  }
-  .pricecontainer {
-    width: 90%;
-    margin-top: 0.7em;
-    background-color: #FCF6BD;
-    box-shadow: inset 0px 0px 2em #FCF6BD;
-  }
-  .price {
-    text-align: center;
-    font-size: x-large;
-    font-weight: bold;
-    padding: 0.75em 0 0 0;
-  }
-  .pricedescriptor {
-    text-align: center;
-    color: rgb(118, 118, 118);
-    font-size: medium;
-    padding: 0 0 1em 0;
-  }
-  .includes {
-    text-align: center;
-    height: auto;
-    color: rgb(110, 110, 110);
-    margin-top: 0.6em;
-    font-size: small;
-    font-weight: bold;
-  }
-  .benefitlist li {
-    font-size: large;
-    text-align: center;
-  }
-  .benefitlist li:nth-child(1) {
-    margin-top: 0.4em;
-  }
-  ol,
-  ul {
-    padding: 2rem;
-  }
-  .btncontainer {
-    text-align: center;
-  }
-  .btncontainer button {
-    --color: #FCF6BD;
-    display: inline-block;
-    width: 8em;
-    height: 2.6em;
-    line-height: 2.5em;
-    margin: 20px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid var(--color);
-    transition: color 0.5s;
-    z-index: 1;
-    font-size: 17px;
-    border-radius: 6px;
-    font-weight: 500;
-  }
-  button:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-  }
-  button:before {
-    top: 100%;
-    left: 100%;
-    transition: all 0.7s;
-  }
-  button:hover:before {
-    top: -30px;
-    left: -30px;
-  }
-  button:active:before {
-    background: #3a0ca3;
-    transition: 0s;
-  }
-  .footer {
-    padding: 20px;
-  }
-  .sectionHorarios__table {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-  }
-  .inscripciones {
-    display: flex;
-    flex-direction: row;
-    width: 30%;
-  }
-  table.GeneratedTable {
-    width: 50%;
-    background-color: #ffffff;
-    border-collapse: collapse;
-    border-width: 2px;
-    border-color: #354638;
-    border-style: solid;
-    color: #000000;
-    text-align: center;
-  }
-  table.GeneratedTable td, table.GeneratedTable th {
-    border-width: 2px;
-    border-color: #354638;
-    border-style: solid;
-    padding: 3px;
-  }
-  table.GeneratedTable thead {
-    background-color: rgba(178, 221, 216, 0.5960784314);
-  }
-}
-/* vista mobile  */
-@media (max-width: 767px) {
+  /* vista mobile  */
   .sectionContacto__iframe--disable, .sectionContacto__form--disable {
     display: none;
   }
@@ -521,9 +628,6 @@ input, textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .portada {
-    padding-top: 180px;
   }
   .sectionContacto__form, .sectionContacto__container1 {
     display: flex;
@@ -547,89 +651,22 @@ input, textarea {
     padding-top: 300px;
   }
 }
-/* vista desktop */
-@media (min-width: 768px) {
-  .sectionHorarios {
-    grid-area: sectionHorarios;
-    width: 100%;
-    height: 300px;
+/* vista mobile  */
+@media (max-width: 767px) {
+  .articleInstructores__img--disable, .col__Instructor {
+    display: none;
   }
-  .sectionHorarios h2 {
-    text-align: center;
+  .articleInstructores__img {
+    width: 80%;
   }
-  .sectionHorarios a {
-    text-align: center;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-  }
-  .portada__img {
-    opacity: 0.8;
-  }
-  .sectionContacto, h2 {
-    text-align: center;
-    padding-bottom: 50px;
-  }
-  .sectionContacto {
-    padding-top: 300px;
-    grid-area: sectionContacto;
-  }
-  .sectionContacto--desktop, .sectionContacto__container3--desktop {
-    background-color: rgba(178, 221, 216, 0.5960784314);
+  .sectionInstructores, .articleInstructores__a {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-  }
-  .sectionContacto__container2 {
-    display: flex;
+    width: auto;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    width: 20%;
-    padding: 30px;
   }
-  .sectionContacto__container1, .sectionContacto__container3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 30px;
-    font-size: 50px;
-  }
-  .sectionContacto__container3--desktop {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 50px;
-  }
-  .sectionContacto {
-    background-color: rgba(202, 220, 218, 0.5058823529);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-  }
-  .footer {
-    text-align: center;
-    padding: 20px;
-  }
-  .formContacto {
-    margin: 0 auto; /* Centramos el formulario */
-    width: 300px; /* Sin ancho no podemos centrar el formulario */
-    /* separamos los bordes del form del resto de elementos */
-    border-radius: 10px; /* Redondeamos los bordes del form */
-  }
-  .formContacto__button {
-    margin-top: 10px; /* Damos un margen individual para el contenedor del botón */
-    width: 60%;
-    margin-left: 15%;
-    border-radius: 10px;
-  }
-  .formContact__input {
-    padding-bottom: 30px;
+  .sectionInstructores {
+    padding-top: 200px;
   }
 }
 

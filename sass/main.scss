@@ -1,8 +1,9 @@
-@use './base';
-@use './header';
-@use './institucional';
-@use './instalaciones';
-@use './instructores';
-@use './planes';
-@use './contacto';
+@import "base";
+@import "header";
+@import "institucional";
+@import "instalaciones";
+@import "instructores";
+@import "planes";
+@import "contacto";
+@import "mobile";
 
