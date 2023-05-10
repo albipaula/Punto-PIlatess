@@ -23,10 +23,9 @@
     } */
     
     p{ text-align: center;}
-    .planes__mobile { padding-top: 200px;}
+.planes__mobile { padding-top: 200px;}
     
-
-    .planes-container { display: flex; 
+.planes-container { display: flex; 
         flex-direction: row;
          flex-wrap: wrap; 
          justify-content: center; 
@@ -66,6 +65,12 @@
       background-color: $thirdColor;
       box-shadow: inset 0px 0px 2em $thirdColor;
       div { margin: 10px;}
+
+     
+.benefitlist lo { 
+
+   font-size: 16px;
+}
       }
       
 .price {

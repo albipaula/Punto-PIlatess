@@ -532,6 +532,9 @@ input, textarea {
   .pricecontainer div {
     margin: 10px;
   }
+  .pricecontainer .benefitlist lo {
+    font-size: 16px;
+  }
   .price {
     text-align: center;
     font-size: x-large;
