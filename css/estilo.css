@@ -61,6 +61,7 @@ a:hover {
 
 .portada {
   grid-area: portada;
+  margin-top: -100px;
 }
 
 .planes1 {
@@ -98,11 +99,6 @@ input, textarea {
   padding: 10px; /* separamos los bordes del form del resto de elementos */
   border-radius: 10px; /* Redondeamos los bordes del form */
   margin-top: 10px;
-}
-
-.portada img {
-  width: 100%;
-  height: auto;
 }
 
 .portada__img {
