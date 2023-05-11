@@ -18,12 +18,13 @@ body {  box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
     font-size: 25px;
     font-weight:bolder;
+    line-height: 10px;
 
 }
 
-h2 { font-size: 2rem; text-align: center;}
-h3 { font-size: 1rem;}
-p { font-size: 1rem; text-align: center; }
+h2 { font-size: 36px; text-align: center;}
+h3 { font-size: 25px;}
+p,li { font-size: 20px; text-align: center; }
 a:link {
 
     color: rgb(15, 15, 15);

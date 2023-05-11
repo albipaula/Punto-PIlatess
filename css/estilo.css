@@ -16,19 +16,20 @@ body {
   font-family: "Dosis", sans-serif;
   font-size: 25px;
   font-weight: bolder;
+  line-height: 10px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 36px;
   text-align: center;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 25px;
 }
 
-p {
-  font-size: 1rem;
+p, li {
+  font-size: 20px;
   text-align: center;
 }
 
@@ -199,13 +200,18 @@ a:hover {
 /* vista desktop */
 /* vista desktop */
 @media (min-width: 768px) {
-  .card-body {
-    height: auto;
+  .instructores-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .instructores-flex .card {
+    width: 500px;
+    height: 200px;
+    margin: 30px;
   }
   .sectionInstructores {
     text-align: center;
     padding-bottom: 50px;
-    grid-area: sectionInstructores;
     padding-top: 200px;
   }
   .articleInstructores__a {
@@ -516,21 +522,19 @@ input, textarea {
     padding: 2rem;
   }
   /**********************************SECCION INSTRUCTORES**********************************/
-  .articleInstructores__img {
-    width: 80%;
-  }
-  .sectionInstructores, .articleInstructores__a {
+  .instructores-flex {
     display: flex;
-    width: auto;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
-  .sectionInstructores .row, .articleInstructores__a .row {
-    padding-top: 50px;
+  .col {
+    min-width: 150px;
   }
   .card {
-    padding-top: 30px;
-    max-width: 150px;
+    padding: 30px;
+    height: auto;
     text-align: center;
   }
   .card .card-text {

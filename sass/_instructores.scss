@@ -3,13 +3,18 @@
   @media (min-width: 768px){
 
 
+.instructores-flex { 
 
-.card-body { height: auto;}
+display: flex; flex-wrap: wrap;
+
+  .card {  width: 500px; height: 200px; margin: 30px;}
+
+}
+
     
 .sectionInstructores { 
         text-align: center; 
         padding-bottom: 50px;
-        grid-area: sectionInstructores;
         padding-top: 200px;
  }
         
