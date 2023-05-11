@@ -1,20 +1,32 @@
 
-
+input, textarea{
+    margin: 0 auto; /* Centramos el formulario */
+    width: 300px;   /* Sin ancho no podemos centrar el formulario */
+    background-color: white; /* Color blanco para el formulario */
+    padding: 10px; /* separamos los bordes del form del resto de elementos */
+    border-radius: 10px; /* Redondeamos los bordes del form */
+    margin-top: 10px;
+ }
   /* vista desktop */
-@media (min-width: 768px){
 
-.contacto {    background: $principalColor;
-    display: flex; flex-direction: column;
-     justify-content: center; align-items: center;}
+
+.contacto {    
+    background: $principalColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;}
  
 
-      
-    .sectionContacto--desktop{ display: flex;
-        flex-direction: row; width: 100%; justify-content: space-around;
-       
+.sectionContacto--desktop{
+        display: flex;
+        flex-direction: row;
+        width: 100%; 
+        justify-content: space-around;
+
     }
     
-    .sectionContacto__container2 {  
+.sectionContacto__container2 {  
     
         display: flex;
         flex-direction: column;
@@ -24,7 +36,7 @@
         padding: 30px;
     }
     
-    .sectionContacto__container3  { 
+.sectionContacto__container3  { 
     
         display: flex;
         flex-direction: column;
@@ -36,7 +48,7 @@
     
 
     
-     .sectionContacto  { 
+.sectionContacto  { 
      
         display: flex;
         flex-direction: row;
@@ -44,12 +56,12 @@
         align-content: center;
     } 
     
-    .footer { 
+.footer { 
         text-align: center;
         padding: 20px;
     }    
     
-    .formContacto 
+.formContacto 
      
     {
         margin: 0 auto; /* Centramos el formulario */
@@ -67,12 +79,11 @@
         border-radius: 10px;
     }
     
-    .formContact__input { 
+.formContact__input { 
     
         padding-bottom: 30px;
     }
     
-    
-    }
+
     
     

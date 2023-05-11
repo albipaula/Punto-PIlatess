@@ -1,20 +1,3 @@
-.grid { 
-
-
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(3,auto);
-  grid-template-areas: 'header' 
-  'sectionInstructores'
-  'contacto'
-  'footer';
-}
-
-.header { grid-area: header;}
-
-.sectionInstalaciones{ grid-area: sectionInstalaciones; }
-.contacto {grid-area: contacto;}
-.footer {grid-area: footer;}
 
   /* vista desktop */
   @media (min-width: 768px){

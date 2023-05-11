@@ -1,38 +1,57 @@
- /* vista mobile  */
- 
- .grid { 
+
+.sectionInstructores{ grid-area: planes; }
 
 
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3,auto);
-    grid-template-areas: 'header' 
-    'sectionInstalaciones'
-    'contacto'
-    'footer';
+.sectionInstalaciones{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 200px; 
+
+      
 }
+
+    
+        
+.articleInstalaciones  {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    background-color:$principalColor;
+    padding: 30px;
+    margin: 130px;
  
-.header { grid-area: header;}
+}
 
-.sectionInstalaciones{ grid-area: sectionInstalaciones; }
-.contacto {grid-area: contacto;}
-.footer {grid-area: footer;}
+.articleInsatalaciones__div--flex{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 80px;
+    padding: 40px;
+}
 
 
-
- @media  (max-width: 767px){
-
-
- .articleInstalaciones__img--disable { 
-    display: none;
-
+    .articleInstalaciones__img , .articleInstalaciones__img--disable  {  
+        border-radius: 20%; 
+      
 } 
+ /* vista mobile  */
+@media  (max-width: 767px){
 
-.articleInstalaciones__div--disable, .sectionInstalaciones__h2   {
-     display: none;}
 
-.articleInstalaciones__div--flex { 
-    text-align: center; }
+    .articleInsatalaciones__div--flex{
+
+flex-direction: column;
+
+
+    }
+
+
 
 
 
@@ -43,30 +62,5 @@
   @media (min-width: 768px){
 
 
-.sectionInstalaciones{ 
-    text-align: center; padding-bottom: 50px;
-    padding-top: 200px;     
-}
-    
-        
-.articleInstalaciones  {
-    
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; 
-    justify-content: space-around;
-    background-color:$principalColor;
-    padding: 30px;
-}
 
-.articleInsatalaciones__div--flex{ 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; gap: 80px;}
-
-
-    .articleInstalaciones__img , .articleInstalaciones__img--disable  {  
-        border-radius: 20%; 
-        padding-top: 20px;
-} 
 }

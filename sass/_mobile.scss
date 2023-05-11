@@ -1,205 +1,200 @@
+//**********************************LAYOUT MOBILE**********************************/
+
+.grid { 
+
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:'header' 
+                        'planes'
+                        'contacto'
+                        'footer';
+}
+
+.header { grid-area: header;}
+.planes-mobile { grid-area: planes;}
+.contacto {grid-area: contacto;}
+.footer {grid-area: footer;}
+
+
  /* vista mobile  */
- @media  (max-width: 767px){
 
-.portada { margin-top: 60px;}
-    .sectionHorarios {
-    grid-area: sectionHorarios;
+  @media  (max-width: 767px){
 
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        background-color:$principalColor;
-        padding: 10px;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    
-    }
-    
-    
-    
-    /*   .articleInstalaciones__img--disable{
-        display: none;
-    
-    } */
-    
-    p{ text-align: center;}
+/**********************************MENU HAMBURGUESA**********************************/
 
+
+.btncontainer button {
+
+    --color: #FCF6BD;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+button:active:before {
+    background: $thirdColor;
+    transition: background 0s;
+}
+
+
+
+
+/**********************************SECCION PORTADA**********************************/
+
+
+.portada { 
+    margin-top: 60px;
+}
+
+
+
+
+/**********************************SECCION PLANES**********************************/
+
+.planes1 { display: none;}  
 .planes-mobile {
-     grid-area: planes1; 
-     display: flex; gap: 10px;
-     text-align: center;
+    grid-area: planes1; 
+    display: flex; gap: 10px;
+    text-align: center;
     justify-content: center;
-      
-      .plan {
-         display: flex; 
-         flex-direction: column;
+
+    .plan {
+        display: flex; 
+        flex-direction: column;
         align-items: center; 
         justify-content: center;
         width: 150px;
         background: $principalColor; 
         padding: 20px;
-        h3{ background: $thirdColor; padding: 10px; border-radius: 10px;}
+
+        h3{ background: $thirdColor; 
+            padding: 10px;
+            border-radius: 10px;}
     
- }
-
- .btncontainer { text-align: center;}
-
 }
 
-    .planes1 { display: none;}
+.btncontainer { 
+    text-align: center;
+}
 
-      
+}
+    
 ol,ul {
 
     padding: 2rem;
     }
 
 
-      
-    
-
-.btncontainer button {
-
-     --color: #FCF6BD;
-
-     width: 8em;
-     height: 2.6em;
-     line-height: 2.5em;
-     margin: 20px;
-     overflow: hidden;
-     border: 2px solid var(--color);
-     transition: color .5s;
-     z-index: 1;
-     font-size: 17px;
-     border-radius: 6px;
-     font-weight: 500;
-    
-    }
-    
-button:before {
-     content: "";
-     position: absolute;
-     z-index: -1;
-
-     height: 150px;
-     width: 200px;
-     border-radius: 50%;
-    }
-    
-button:before {
-     top: 100%;
-     left: 100%;
-     transition: all .7s;
-    }
-    
-button:hover:before {
-     top: -30px;
-     left: -30px;
-    }
-    
-button:active:before {
-     background: $thirdColor;
-     transition: background 0s;
-    }
-    
-.footer { 
-    grid-area: footer;
-      padding: 20px;
-    }
-    
-    
-    /* .sectionHorarios__table { 
-    
-      display: flex;
-      justify-content: center;
-      padding: 15px;
-    }
-    
-    table.GeneratedTable {
-      width: auto;
-      background-color: #ffffff;
-      border-collapse: collapse;
-      border-width: 2px;
-      border-color: #354638;
-      border-style: solid;
-      color: #000000;
-      text-align: center;
-    
-    }
-    
-    table.GeneratedTable td, table.GeneratedTable th {
-      border-width: 2px;
-      border-color: #354638;
-      border-style: solid;
-      padding: 3px;
-    }
-    
-    table.GeneratedTable thead {
-      background-color: $principalColor;
-    } */
-    
-    
 
 
-     
- /* vista mobile  */
 
 
-    .sectionContacto__iframe--disable, .sectionContacto__form--disable{ 
-       display: none;
-   }
-   
-   .sectionContacto__h2{ display: none;}
-   
-
-   
-   
- .footer  {
-   
-    text-align: center;
-   }
-   
- 
-   
-   
-   
-   .sectionContacto__form , .sectionContacto__container1 { 
-   
-       display: flex;
-       flex-direction: column;
-       padding: 10px;
-       align-items: center;
-   }
-   .sectionContacto__container3  { 
-       display: flex;
-       flex-direction: row;
-       justify-content: space-around;
-       padding: 10px;
-       font-size: 50px;
-       background-color: #cadcda81;
-   }
-   .sectionContacto { background-color: $principalColor; grid-area: sectionContacto;}
-   
-   
-    .sectionContacto{ padding-top: 300px; }
-   
-   
-    /* vista mobile  */
+//**********************************SECCION HORARIOS**********************************/
 
 
-    
+
+
+/**********************************SECCION INSTRUCTORES**********************************/
 .articleInstructores__img { width: 80%;}
         
 .sectionInstructores, .articleInstructores__a {
+                
+                    display: flex;
+                    width: auto;
+                    flex-direction: column;
+                    align-items: center; 
+                    .row { padding-top: 50px;}
+                }
+         
         
-            display: flex;
-            width: auto;
-            flex-direction: column;
-            align-items: center; 
-            .row { padding-top: 50px;}
-        }
- 
+                    
+.card {  padding-top: 30px; 
+            max-width: 150px; 
+            text-align: center; 
+            .card-text{ 
+                display: none;
+            }
+}
 
-            
-  .card {  padding-top: 30px; max-width: 150px; text-align: center; .card-text{ display: none;}}}
+
+//**********************************SECCION CONTACTO**********************************/
+.sectionContacto__container1 {
+    display: none;
+}
+
+.contacto { display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+.sectionContacto--desktop { display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.sectionContacto {
+    background-color: $principalColor;
+    
+
+
+
+
+
+ .sectionContacto__container3  { 
+display: flex;
+flex-direction: row;
+padding: 10px;
+font-size: 50px;
+background-color: #cadcda81;
+} 
+
+}
+
+
+//**********************************SECCION FOOTER**********************************/
+
+
+.footer { 
+    grid-area: footer;
+      padding: 20px;
+      text-align: center;
+    }
+
+
+
+
+
+    
+
+}
         

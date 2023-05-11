@@ -23,7 +23,7 @@ body {  box-sizing: border-box;
 
 h2 { font-size: 2rem; text-align: center;}
 h3 { font-size: 1rem;}
-p { font-size: 1rem;  }
+p { font-size: 1rem; text-align: center; }
 a:link {
 
     color: rgb(15, 15, 15);
@@ -77,11 +77,16 @@ gap: 100px;
 .institucional { grid-area: institucional;}
 .contacto { grid-area: contacto;}
 .footer { grid-area: footer;}
-input, textarea{
-    margin: 0 auto; /* Centramos el formulario */
-    width: 300px;   /* Sin ancho no podemos centrar el formulario */
-    background-color: white; /* Color blanco para el formulario */
-    padding: 10px; /* separamos los bordes del form del resto de elementos */
-    border-radius: 10px; /* Redondeamos los bordes del form */
-    margin-top: 10px;
- }
+
+
+ .sectionHorarios {
+    grid-area: sectionHorarios;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color:$principalColor;
+    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    }
