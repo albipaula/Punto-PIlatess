@@ -1,3 +1,36 @@
+@media (max-width: 768px){
+
+
+.grid { 
+
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4,auto);
+  grid-template-areas: 'header' 
+  'planes1'
+  'contacto'
+  'footer';
+  gap: 200px
+  ;
+}
+
+
+.planes-mobile{   grid-area: planes1; 
+  display: flex;
+   flex-direction: column;
+    justify-content: center;
+     align-items: center;
+    
+     .planes { display: flex; flex-direction: column; justify-content: center; align-items: center;}
+    
+
+     .plan { margin: 20px;;}
+    }
+.contacto {grid-area: contacto;}
+.footer {grid-area: footer;}
+
+}
 
  /* vista desktop */
 @media (min-width: 768px){

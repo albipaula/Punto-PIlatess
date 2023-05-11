@@ -23,103 +23,49 @@
     } */
     
     p{ text-align: center;}
-.planes__mobile { padding-top: 200px;}
-    
-.planes-container { display: flex; 
-        flex-direction: row;
-         flex-wrap: wrap; 
-         justify-content: center; 
-         align-items: center;
 
-       
-       }
-.inscripcion{ 
-        display: flex; 
-        align-items: center;
-         justify-content: center;
-        }
-.plan {
-    
-     min-width: 150px;
-     max-width: 170px;
-     height: 530px;
-      text-align: center;
-      background: $principalColor;
-      box-shadow: 0px 0px 20px $thirdColor;
-      transition-duration: 0.5s;
-      margin: 10px;
-      padding-bottom: 20px; 
-    }
+.planes-mobile {
+     grid-area: planes1; 
+     display: flex; gap: 10px;
+     text-align: center;
+    justify-content: center;
       
-.title {
-      text-align: center;
-      margin-top: 0.5em;
-      font-weight: bold;
-      font-size: x-large;
+      .plan {
+         display: flex; 
+         flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        width: 150px;
+        background: $principalColor; 
+        padding: 20px;
+        h3{ background: $thirdColor; padding: 10px; border-radius: 10px;}
     
-      }
-      
-.pricecontainer {
-      width: 100%;
-      margin-top: 0.7em;
-      background-color: $thirdColor;
-      box-shadow: inset 0px 0px 2em $thirdColor;
-      div { margin: 10px;}
+ }
 
-     
-.benefitlist lo { 
+ .btncontainer { text-align: center;}
 
-   font-size: 16px;
 }
-      }
-      
-.price {
-      text-align: center;
-      font-size: x-large;
-      font-weight: bold;
-      padding: 0.75em 0 0 0;
-      }
-      
-.pricedescriptor {
-      text-align: center;
-      color: rgb(118, 118, 118);
-      font-size: medium;
-      padding: 0 0 1em 0;
-      }
-      
-.includes {
-      text-align: center;
-      height: auto;
-      color: rgb(110, 110, 110);
-      margin-top: 0.6em;
-      font-size: small;
-      font-weight: bold;
-      }
-      
 
-      
-    
+    .planes1 { display: none;}
+
       
 ol,ul {
 
     padding: 2rem;
     }
 
-.btncontainer {
-    text-align: center;
-    }
+
       
     
 
 .btncontainer button {
 
      --color: #FCF6BD;
-     display: inline-block;
+
      width: 8em;
      height: 2.6em;
      line-height: 2.5em;
      margin: 20px;
-     position: relative;
      overflow: hidden;
      border: 2px solid var(--color);
      transition: color .5s;

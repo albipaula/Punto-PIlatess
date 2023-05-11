@@ -48,6 +48,10 @@ a:hover {
   transition: 5s;
 }
 
+.planes-mobile {
+  display: none;
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: auto;
@@ -255,6 +259,37 @@ input, textarea {
     text-align: center;
     padding: 30px;
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header" "planes1" "contacto" "footer";
+    gap: 200px;
+  }
+  .planes-mobile {
+    grid-area: planes1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .planes-mobile .planes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .planes-mobile .plan {
+    margin: 20px;
+  }
+  .contacto {
+    grid-area: contacto;
+  }
+  .footer {
+    grid-area: footer;
   }
 }
 /* vista desktop */
@@ -491,84 +526,42 @@ input, textarea {
   p {
     text-align: center;
   }
-  .planes__mobile {
-    padding-top: 200px;
-  }
-  .planes-container {
+  .planes-mobile {
+    grid-area: planes1;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .inscripcion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .plan {
-    min-width: 150px;
-    max-width: 170px;
-    height: 530px;
+    gap: 10px;
     text-align: center;
+    justify-content: center;
+  }
+  .planes-mobile .plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
     background: rgba(178, 221, 216, 0.5960784314);
-    box-shadow: 0px 0px 20px #FCF6BD;
-    transition-duration: 0.5s;
-    margin: 10px;
-    padding-bottom: 20px;
+    padding: 20px;
   }
-  .title {
+  .planes-mobile .plan h3 {
+    background: #FCF6BD;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .planes-mobile .btncontainer {
     text-align: center;
-    margin-top: 0.5em;
-    font-weight: bold;
-    font-size: x-large;
   }
-  .pricecontainer {
-    width: 100%;
-    margin-top: 0.7em;
-    background-color: #FCF6BD;
-    box-shadow: inset 0px 0px 2em #FCF6BD;
-  }
-  .pricecontainer div {
-    margin: 10px;
-  }
-  .pricecontainer .benefitlist lo {
-    font-size: 16px;
-  }
-  .price {
-    text-align: center;
-    font-size: x-large;
-    font-weight: bold;
-    padding: 0.75em 0 0 0;
-  }
-  .pricedescriptor {
-    text-align: center;
-    color: rgb(118, 118, 118);
-    font-size: medium;
-    padding: 0 0 1em 0;
-  }
-  .includes {
-    text-align: center;
-    height: auto;
-    color: rgb(110, 110, 110);
-    margin-top: 0.6em;
-    font-size: small;
-    font-weight: bold;
+  .planes1 {
+    display: none;
   }
   ol, ul {
     padding: 2rem;
   }
-  .btncontainer {
-    text-align: center;
-  }
   .btncontainer button {
     --color: #FCF6BD;
-    display: inline-block;
     width: 8em;
     height: 2.6em;
     line-height: 2.5em;
     margin: 20px;
-    position: relative;
     overflow: hidden;
     border: 2px solid var(--color);
     transition: color 0.5s;
