@@ -425,6 +425,10 @@ input, textarea {
   padding-bottom: 30px;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .grid {
   display: grid;
   grid-template-columns: auto;
