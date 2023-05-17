@@ -1,35 +1,37 @@
 //**********************************LAYOUT MOBILE**********************************/
 
-html { 
 
-overflow-x: hidden;
-
-}
 .grid { 
 
 
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(4,auto);
+    grid-template-rows: repeat(5,auto);
     grid-template-areas:'header' 
                         'planes'
+                        'institucional'
                         'contacto'
                         'footer';
 }
 
 .header { grid-area: header;}
 .planes-mobile { grid-area: planes;}
+.institucional { grid-area: institucional;}
 .contacto {grid-area: contacto;}
 .footer {grid-area: footer;}
 
 
  /* vista mobile  */
 
-  @media  (max-width: 767px){
+  @media  (max-width: 700px){
 
 /**********************************MENU HAMBURGUESA**********************************/
 
+html { 
 
+    overflow-x: hidden;
+    
+    }
 .btncontainer button {
 
     --color: #FCF6BD;
@@ -159,42 +161,40 @@ ol,ul {
 
 
 //**********************************SECCION CONTACTO**********************************/
-.sectionContacto__container1 {
-    display: none;
-}
 
-.contacto { display: flex; flex-direction: column; justify-content: center; align-items: center;}
 
-.sectionContacto--desktop { display: flex; 
+
+.sectionContacto--desktop { 
+    width:90%;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+
+iframe { display: none;}
+
+ 
 }
-.sectionContacto {
-    background-color: $principalColor;
+
     
 
-
-
-
-
  .sectionContacto__container3  { 
-display: flex;
+
 flex-direction: row;
 padding: 10px;
 font-size: 50px;
 background-color: #cadcda81;
 } 
 
-}
+
 
 
 //**********************************SECCION FOOTER**********************************/
 
 
 .footer { 
-    grid-area: footer;
+  
       padding: 20px;
       text-align: center;
     }

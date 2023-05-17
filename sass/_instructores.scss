@@ -1,17 +1,30 @@
 
-  /* vista desktop */
-  @media (min-width: 768px){
 
+  
 
-.instructores-flex { 
+.card { margin: 20px; height: max-content;
 
-display: flex; flex-wrap: wrap;
+.card-body { 
 
-  .card {  width: 500px; height: 200px; margin: 30px;}
+width: 100%; height: 200px;
+ display: flex;
+ flex-direction: column; 
+justify-content: center; align-items: center;
 
 }
 
-    
+}
+
+
+
+
+
+
+
+
+
+
+  // pagina Instructores //  
 .sectionInstructores { 
         text-align: center; 
         padding-bottom: 50px;
@@ -35,6 +48,5 @@ display: flex; flex-wrap: wrap;
             
 }   
         
-}
-        
+      
         

@@ -16,7 +16,6 @@ body {
   font-family: "Dosis", sans-serif;
   font-size: 25px;
   font-weight: bolder;
-  line-height: 10px;
 }
 
 h2 {
@@ -35,7 +34,7 @@ p, li {
 
 a:link {
   color: rgb(15, 15, 15);
-  font-size: 2rem;
+  font-size: 16px;
 }
 
 a:visited {
@@ -100,7 +99,6 @@ a:hover {
 }
 
 .sectionHorarios {
-  grid-area: sectionHorarios;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,6 +108,149 @@ a:hover {
   padding-bottom: 100px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header" "planes" "institucional" "contacto" "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.planes-mobile {
+  grid-area: planes;
+}
+
+.institucional {
+  grid-area: institucional;
+}
+
+.contacto {
+  grid-area: contacto;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* vista mobile  */
+@media (max-width: 700px) {
+  /**********************************MENU HAMBURGUESA**********************************/
+  html {
+    overflow-x: hidden;
+  }
+  .btncontainer button {
+    --color: #FCF6BD;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  button:active:before {
+    background: #FCF6BD;
+    transition: background 0s;
+  }
+  /**********************************SECCION PORTADA**********************************/
+  .portada {
+    margin-top: 60px;
+  }
+  /**********************************SECCION PLANES**********************************/
+  .planes1 {
+    display: none;
+  }
+  .planes-mobile {
+    grid-area: planes1;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  .planes-mobile .plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background: rgba(178, 221, 216, 0.5960784314);
+    padding: 20px;
+  }
+  .planes-mobile .plan h3 {
+    background: #FCF6BD;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .planes-mobile .btncontainer {
+    text-align: center;
+  }
+  ol, ul {
+    padding: 2rem;
+  }
+  /**********************************SECCION INSTRUCTORES**********************************/
+  .instructores-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .col {
+    min-width: 150px;
+  }
+  .card {
+    padding: 30px;
+    height: auto;
+    text-align: center;
+  }
+  .card .card-text {
+    display: none;
+  }
+  .sectionContacto--desktop {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sectionContacto--desktop iframe {
+    display: none;
+  }
+  .sectionContacto__container3 {
+    flex-direction: row;
+    padding: 10px;
+    font-size: 50px;
+    background-color: rgba(202, 220, 218, 0.5058823529);
+  }
+  .footer {
+    padding: 20px;
+    text-align: center;
+  }
+}
 .portada__img {
   opacity: 0.8;
 }
@@ -127,12 +268,6 @@ a:hover {
 }
 
 /* vista mobile  */
-@media (max-width: 767px) {
-  .institucional {
-    display: none;
-    grid-area: institucional;
-  }
-}
 /* vista desktop */
 @media (min-width: 768px) {
   .institucional {
@@ -140,8 +275,6 @@ a:hover {
     display: flex;
     gap: 20px;
     flex-direction: column;
-    padding-top: 100px;
-    padding-bottom: 100px;
     width: auto;
   }
   .institucional__mision, .institucional__vision {
@@ -151,6 +284,11 @@ a:hover {
   }
   .institucional__mision div, .institucional__vision div {
     display: flex;
+    gap: 50px;
+  }
+  .institucional__mision div img, .institucional__vision div img {
+    max-width: 400px;
+    max-height: 400px;
   }
   .institucional__mision p, .institucional__vision p {
     align-self: center;
@@ -198,36 +336,39 @@ a:hover {
   }
 }
 /* vista desktop */
-/* vista desktop */
-@media (min-width: 768px) {
-  .instructores-flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .instructores-flex .card {
-    width: 500px;
-    height: 200px;
-    margin: 30px;
-  }
-  .sectionInstructores {
-    text-align: center;
-    padding-bottom: 50px;
-    padding-top: 200px;
-  }
-  .articleInstructores__a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgba(178, 221, 216, 0.5960784314);
-    padding: 30px;
-  }
-  .articleInstructores__a li, .articleInstructores__a h3 {
-    text-align: center;
-    padding: 30px;
-    font-size: 1.5rem;
-  }
+.card {
+  margin: 20px;
+  height: max-content;
 }
+.card .card-body {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionInstructores {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 200px;
+}
+
+.articleInstructores__a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(178, 221, 216, 0.5960784314);
+  padding: 30px;
+}
+.articleInstructores__a li, .articleInstructores__a h3 {
+  text-align: center;
+  padding: 30px;
+  font-size: 1.5rem;
+}
+
 @media (max-width: 768px) {
   .planes-page {
     grid-area: planes;
@@ -364,17 +505,19 @@ input, textarea {
 /* vista desktop */
 .contacto {
   background: rgba(178, 221, 216, 0.5960784314);
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .sectionContacto--desktop {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: space-around;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .sectionContacto__container2 {
@@ -423,157 +566,6 @@ input, textarea {
 
 .formContact__input {
   padding-bottom: 30px;
-}
-
-html {
-  overflow-x: hidden;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header" "planes" "contacto" "footer";
-}
-
-.header {
-  grid-area: header;
-}
-
-.planes-mobile {
-  grid-area: planes;
-}
-
-.contacto {
-  grid-area: contacto;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-/* vista mobile  */
-@media (max-width: 767px) {
-  /**********************************MENU HAMBURGUESA**********************************/
-  .btncontainer button {
-    --color: #FCF6BD;
-    width: 8em;
-    height: 2.6em;
-    line-height: 2.5em;
-    margin: 20px;
-    overflow: hidden;
-    border: 2px solid var(--color);
-    transition: color 0.5s;
-    z-index: 1;
-    font-size: 17px;
-    border-radius: 6px;
-    font-weight: 500;
-  }
-  button:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-  }
-  button:before {
-    top: 100%;
-    left: 100%;
-    transition: all 0.7s;
-  }
-  button:hover:before {
-    top: -30px;
-    left: -30px;
-  }
-  button:active:before {
-    background: #FCF6BD;
-    transition: background 0s;
-  }
-  /**********************************SECCION PORTADA**********************************/
-  .portada {
-    margin-top: 60px;
-  }
-  /**********************************SECCION PLANES**********************************/
-  .planes1 {
-    display: none;
-  }
-  .planes-mobile {
-    grid-area: planes1;
-    display: flex;
-    gap: 10px;
-    text-align: center;
-    justify-content: center;
-  }
-  .planes-mobile .plan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    background: rgba(178, 221, 216, 0.5960784314);
-    padding: 20px;
-  }
-  .planes-mobile .plan h3 {
-    background: #FCF6BD;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  .planes-mobile .btncontainer {
-    text-align: center;
-  }
-  ol, ul {
-    padding: 2rem;
-  }
-  /**********************************SECCION INSTRUCTORES**********************************/
-  .instructores-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  .col {
-    min-width: 150px;
-  }
-  .card {
-    padding: 30px;
-    height: auto;
-    text-align: center;
-  }
-  .card .card-text {
-    display: none;
-  }
-  .sectionContacto__container1 {
-    display: none;
-  }
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .sectionContacto--desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .sectionContacto {
-    background-color: rgba(178, 221, 216, 0.5960784314);
-  }
-  .sectionContacto .sectionContacto__container3 {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    font-size: 50px;
-    background-color: rgba(202, 220, 218, 0.5058823529);
-  }
-  .footer {
-    grid-area: footer;
-    padding: 20px;
-    text-align: center;
-  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

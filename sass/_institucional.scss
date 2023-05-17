@@ -2,21 +2,16 @@ $principalColor:  #b2ddd898;
 $thirdColor:#FCF6BD;
 $secondColor:#FF99C8;
  /* vista mobile  */
- @media  (max-width: 767px){
 
-.institucional { display: none ;grid-area:institucional ;}
-        
-
- }
  /* vista desktop */
  @media (min-width:768px){
 .institucional { 
+
     grid-area: institucional;
 display: flex;
 gap: 20px;
 flex-direction: column;
-padding-top: 100px;
-padding-bottom: 100px;
+
 width: auto;
 }
 
@@ -27,7 +22,9 @@ padding: 50px;
 line-height: 50px;
 box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-div {   display: flex;}
+div {   display: flex; 
+    gap: 50px;
+    img { max-width: 400px; max-height: 400px;}}
 
 p {   align-self: center;}
 
