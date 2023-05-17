@@ -136,7 +136,7 @@ a:hover {
 }
 
 /* vista mobile  */
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   /**********************************MENU HAMBURGUESA**********************************/
   html {
     overflow-x: hidden;
@@ -230,6 +230,28 @@ a:hover {
   .card .card-text {
     display: none;
   }
+  .institucional {
+    grid-area: institucional;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: auto;
+  }
+  .institucional__mision, .institucional__vision {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .institucional__mision div, .institucional__vision div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .institucional__mision div img, .institucional__vision div img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .institucional__mision p, .institucional__vision p {
+    align-self: center;
+  }
   .sectionContacto--desktop {
     width: 90%;
     display: flex;
@@ -239,12 +261,6 @@ a:hover {
   }
   .sectionContacto--desktop iframe {
     display: none;
-  }
-  .sectionContacto__container3 {
-    flex-direction: row;
-    padding: 10px;
-    font-size: 50px;
-    background-color: rgba(202, 220, 218, 0.5058823529);
   }
   .footer {
     padding: 20px;
@@ -269,31 +285,30 @@ a:hover {
 
 /* vista mobile  */
 /* vista desktop */
-@media (min-width: 768px) {
-  .institucional {
-    grid-area: institucional;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    width: auto;
-  }
-  .institucional__mision, .institucional__vision {
-    padding: 50px;
-    line-height: 50px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  .institucional__mision div, .institucional__vision div {
-    display: flex;
-    gap: 50px;
-  }
-  .institucional__mision div img, .institucional__vision div img {
-    max-width: 400px;
-    max-height: 400px;
-  }
-  .institucional__mision p, .institucional__vision p {
-    align-self: center;
-  }
+.institucional {
+  grid-area: institucional;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: auto;
 }
+
+.institucional__mision, .institucional__vision {
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.institucional__mision div, .institucional__vision div {
+  display: flex;
+  gap: 50px;
+}
+.institucional__mision div img, .institucional__vision div img {
+  max-width: 400px;
+  max-height: 400px;
+}
+.institucional__mision p, .institucional__vision p {
+  align-self: center;
+}
+
 .sectionInstructores {
   grid-area: planes;
 }
@@ -505,7 +520,6 @@ input, textarea {
 /* vista desktop */
 .contacto {
   background: rgba(178, 221, 216, 0.5960784314);
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -515,8 +529,9 @@ input, textarea {
 .sectionContacto--desktop {
   display: flex;
   flex-direction: row;
-  width: 50%;
-  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -532,10 +547,10 @@ input, textarea {
 .sectionContacto__container3 {
   display: flex;
   flex-direction: column;
+  height: 400px;
   align-items: center;
   justify-content: space-evenly;
   padding: 30px;
-  font-size: 50px;
 }
 
 .sectionContacto {
